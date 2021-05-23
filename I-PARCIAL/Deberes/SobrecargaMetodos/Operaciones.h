@@ -6,6 +6,7 @@ class Operaciones {
 	public:
 		//suma
 		T sumar(T,T);
+		T sumar(T,T,T);
 		T sumar (T,T,T,T);
 		T sumar (T,T,T,T,T);
 		
@@ -13,6 +14,7 @@ class Operaciones {
 		T restar(T);
 		T restar(T,T);
 		T restar (T,T,T);
+		T restar (T,T,T,T,T);
 		T restar (T,T,T,T,T,T);
 		
 		//multiplicacion
@@ -23,6 +25,7 @@ class Operaciones {
 		
 		//Calcular Mayor
 		T calcularMayor(T,T);
+		T calcularMayor(T,T,T);
 		T calcularMayor(T,T,T,T,T);
 		T calcularMayor(T, T,T, T);
 };

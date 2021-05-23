@@ -30,14 +30,14 @@ int main(int argc, char** argv) {
 		case 2:
 				cout<<"Suma = ";
 			    cout<<"Resta  = ";
-			    cout<<"Multiplicación = ";
+			    cout<<"Multiplicación = "<<operaciones.multiplicar(numeros[0],numeros[1])<<endl;
 			    cout<<"Mayor = "<<operaciones.calcularMayor(numeros[0],numeros[1])<<endl; 
 				break;
 		case 3:
-				cout<<"Suma = ";
+				cout<<"Suma = "<<operaciones.sumar(numeros[0], numeros[1], numeros[2])<<endl;
 			    cout<<"Resta  = "<<operaciones.restar(numeros[0], numeros[1], numeros[2])<<endl;
 			    cout<<"Multiplicación = "<<operaciones.multiplicar(numeros[0],numeros[1],numeros[2])<<endl;
-			    cout<<"Mayor = "; 
+			    cout<<"Mayor = "<<operaciones.calcularMayor(numeros[0], numeros[1], numeros[2]); 
 				break;
 		case 4:
 				cout<<"Suma = "<<operaciones.sumar(numeros[0],numeros[1],numeros[2],numeros[3])<<endl;
@@ -47,7 +47,7 @@ int main(int argc, char** argv) {
 				break;
 		case 5:
 				cout<<"Suma = "<<operaciones.sumar(numeros[0],numeros[1],numeros[2],numeros[3],numeros[4])<<endl;
-			    cout<<"Resta  = ";
+			    cout<<"Resta  = "<<operaciones.restar(numeros[0],numeros[1],numeros[2],numeros[3],numeros[4])<<endl;
 			    cout<<"Multiplicación = ";
 			    cout<<"Mayor = "<<operaciones.calcularMayor(numeros[0],numeros[1],numeros[2],numeros[3],numeros[4])<<endl; 
 				break;
