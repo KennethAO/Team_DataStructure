@@ -24,14 +24,14 @@ int main(int argc, char** argv) {
 		case 1:
 			    cout<<"Suma = ";
 			    cout<<"Resta  = ";
-			    cout<<"Multiplicación = ";
+			    cout<<"Multiplicación = "<<operaciones.multiplicar(numeros[0])<<endl;
 			    cout<<"Mayor = "; 
 				break;
 		case 2:
 				cout<<"Suma = ";
 			    cout<<"Resta  = ";
 			    cout<<"Multiplicación = ";
-			    cout<<"Mayor = "; 
+			    cout<<"Mayor = "<<operaciones.calcularMayor(numeros[0],numeros[1])<<endl; 
 				break;
 		case 3:
 				cout<<"Suma = ";
@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
 			    cout<<"Mayor = "; 
 				break;
 		case 4:
-				cout<<"Suma = ";
+				cout<<"Suma = "<<operaciones.sumar(numeros[0],numeros[1],numeros[2],numeros[3])<<endl;
 			    cout<<"Resta  = ";
 			    cout<<"Multiplicación = ";
 			    cout<<"Mayor = "; 
@@ -53,7 +53,7 @@ int main(int argc, char** argv) {
 				break;
 		case 6:
 				cout<<"Suma = ";
-			    cout<<"Resta  = ";
+			    cout<<"Resta  = "<<operaciones.restar(numeros[0],numeros[1],numeros[2],numeros[3],numeros[4],numeros[5])<<endl;
 			    cout<<"Multiplicación = ";
 			    cout<<"Mayor = "; 
 				break;				
