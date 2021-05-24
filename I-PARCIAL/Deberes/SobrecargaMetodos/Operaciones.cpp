@@ -117,50 +117,43 @@ T Operaciones <T> :: calcularMayor (T valor1, T valor2) {
 
 template <typename T>
 T Operaciones <T> :: calcularMayor (T valor1, T valor2, T valor3) {
-		if (valor1> valor2 && valor1> valor3) {
-			return valor1;
+	int mayor; 
+	T numeros[3];
+	numeros[0]=valor1;
+	numeros[1]=valor2;
+	numeros[2]=valor3;
+	for(int i=0;i<3;i++){
+		if(i==0){
+			mayor = numeros[i];
 		}
-		else   if (valor2> valor1 && valor2> valor3) {
-			return valor2;
+		else{
+			if(numeros[i]>mayor){
+				mayor = numeros[i];
+			}
 		}
-		else   if (valor3> valor1 && valor3> valor2) {
-			return valor3;
-		}
-		
-		
+	}
+	return mayor; 	
 }
 
 template <typename T>
 T Operaciones<T>::calcularMayor(T valor1, T valor2, T valor3, T valor4) {
-	if (valor1>= valor2) {
-		if (valor1>= valor3) {
-			if (valor1>= valor4) {
-				return valor1;
-			}else {
-				return valor4;
-			}
-		} else {
-			if (valor3>= valor4) {
-				return valor3;
-			} else{
-				return valor4;
-			}
+	int mayor; 
+	T numeros[4];
+	numeros[0]=valor1;
+	numeros[1]=valor2;
+	numeros[2]=valor3;
+	numeros[3]=valor4;
+	for(int i=0;i<4;i++){
+		if(i==0){
+			mayor = numeros[i];
 		}
-	} else {
-		if (valor2>= valor3) {
-			if (valor2>= valor4) {
-				return valor2;
-			} else{
-				return valor4;
-			}
-		} else {
-			if (valor3>= valor4) {
-				return valor3;
-			} else {
-				return valor4;
+		else{
+			if(numeros[i]>mayor){
+				mayor = numeros[i];
 			}
 		}
 	}
+	return mayor; 
 }
 
 
@@ -169,50 +162,47 @@ T Operaciones<T>::calcularMayor(T valor1, T valor2, T valor3, T valor4) {
 
 template <typename T>
 T Operaciones<T>::calcularMayor (T valor1, T valor2, T valor3, T valor4, T valor5) {
-		if (valor1> valor2 && valor1> valor3 && valor1> valor4 && valor1> valor5) {
-			return valor1;
+	int mayor; 
+	T numeros[5];
+	numeros[0]=valor1;
+	numeros[1]=valor2;
+	numeros[2]=valor3;
+	numeros[3]=valor4;
+	numeros[4]=valor5;
+	for(int i=0;i<5;i++){
+		if(i==0){
+			mayor = numeros[i];
 		}
-		else   if (valor2> valor1 && valor2> valor3 && valor2> valor4 && valor2> valor5) {
-			return valor2;
+		else{
+			if(numeros[i]>mayor){
+				mayor = numeros[i];
+			}
 		}
-		else   if (valor3> valor1 && valor3> valor2 && valor3> valor4 && valor3> valor5) {
-			return valor3;
-		}
-		else   if (valor4> valor1 && valor4> valor3 && valor4> valor3 && valor4> valor5) {
-			return valor2;
-		}
-		else   if (valor1 == valor2 && valor1 == valor3 && valor1 == 4 && valor1 == 5 ) {
-			return valor1;	
-		}
-		else {
-			return valor5;
-		}
-			
+	}
+	return mayor; 
 }
 
 template <typename T>
 T Operaciones<T>::calcularMayor(T valor1,T valor2,T valor3,T valor4,T valor5,T valor6){
-		if (valor1> valor2 && valor1> valor3 && valor1> valor4 && valor1> valor5) {
-			return valor1;
-		}
-		else if (valor2> valor1 && valor2> valor3 && valor2> valor4 && valor2> valor5) {
-			return valor2;
-		}
-		else if (valor3> valor1 && valor3> valor2 && valor3> valor4 && valor3> valor5) {
-			return valor3;
-		}
-		else if (valor4> valor1 && valor4> valor3 && valor4> valor3 && valor4> valor5) {
-			return valor4;
-		}
-		else if (valor1 == valor2 && valor1 == valor3 && valor1 == 4 && valor1 == 5) {
-			return valor1;	
+	int mayor; 
+	T numeros[6];
+	numeros[0]=valor1;
+	numeros[1]=valor2;
+	numeros[2]=valor3;
+	numeros[3]=valor4;
+	numeros[4]=valor5;
+	numeros[5]=valor6;
+	for(int i=0;i<6;i++){
+		if(i==0){
+			mayor = numeros[i];
 		}
 		else{
-			return valor5;
+			if(numeros[i]>mayor){
+				mayor = numeros[i];
+			}
 		}
-		if(valor5> valor1 && valor4>valor3 && valor3>valor2 && valor2>valor1 && valor4>valor5){
-			return valor6;
-		}
+	}
+	return mayor; 
 }
 
 
