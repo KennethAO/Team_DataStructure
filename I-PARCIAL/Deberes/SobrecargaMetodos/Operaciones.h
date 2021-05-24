@@ -1,4 +1,3 @@
-
 template <typename T>
 class Operaciones {
 
@@ -8,21 +7,19 @@ class Operaciones {
 		T sumar(T,T,T);
 		T sumar (T,T,T,T);
 		T sumar (T,T,T,T,T);
-		T sumar (T,T,T);
 		//resta
 		T restar(T);
 		T restar(T,T);
 		T restar (T,T,T);
 		T restar (T,T,T,T,T);
 		T restar (T,T,T,T,T,T);
-		T resta (T,T);
 		
-		//multiplicacion
+		//multiplicacio
 		T multiplicar (T);
 		T multiplicar(T,T);
 		T multiplicar (T,T,T);
 		T multiplicar(T,T,T,T,T,T);	
-		T multiplicar (T,T,T,T,T);
+		
 		
 			
 		
@@ -31,5 +28,5 @@ class Operaciones {
 		T calcularMayor(T,T,T);
 		T calcularMayor(T,T,T,T,T);
 		T calcularMayor(T, T,T, T);
-		T calcularMayor(T,T,T,T,T);
+	
 };
