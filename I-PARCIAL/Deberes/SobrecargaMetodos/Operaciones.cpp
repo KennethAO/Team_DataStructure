@@ -1,93 +1,93 @@
-# include   " Operaciones.h "
+# include   "Operaciones.h"
 
 
-// suma
-plantilla < typename T>
+// Sumas
+template < typename T>
 T Operaciones <T> :: sumar (T valor1, T valor2) {
 	return valor1 + valor2;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: sumar (T valor1, T valor2, T valor3) {
 	return valor1 + valor2 + valor3;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: sumar (T valor1, T valor2, T valor3, T valor4) {
 	return valor1 + valor2 + valor3 + valor4;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: sumar (T valor1, T valor2, T valor3, T valor4, T valor5) {
 	return valor1 + valor2 + valor3 + valor4 + valor5;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: sumar (T valor1, T valor2, T valor3, T valor4, T valor5, T valor6) {
 	return valor1 + valor2 + valor3 + valor4 + valor5 + valor6;
 }
 
 
 
-// restar
-plantilla < typename T>
+// Restas
+template < typename T>
 T Operaciones <T> :: restar (T valor1) {
 	return valor1;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: restar (T valor1, T valor2) {
 	return valor1-valor2;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: restar (T valor1, T valor2, T valor3) {
 	return valor1-valor2-valor3;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: restar (T valor1, T valor2, T valor3, T valor4) {
 	return valor1-valor2-valor3-valor4;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: restar (T valor1, T valor2, T valor3, T valor4, T valor5) {
 	return valor1-valor2-valor3-valor4-valor5;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: restar (T valor1, T valor2, T valor3, T valor4, T valor5,T valor6) {
 	return valor1-valor2-valor3-valor4-valor5-valor6;
 }
 
 
-// multiplicador
-plantilla < typename T>
+// Multiplicaciones
+template < typename T>
 T Operaciones <T> :: multiplicar (T valor1) {
 	return valor1;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: multiplicar (T valor1, T valor2) {
 	return valor1 * valor2;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: multiplicar (T valor1, T valor2, T valor3) {
 	return valor1 * valor2 * valor3;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: multiplicar (T valor1, T valor2, T valor3, T valor4) {
 	return valor1 * valor2 * valor3* valor4;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: multiplicar (T valor1, T valor2, T valor3, T valor4 , T valor5 ) {
 	return valor1 * valor2 * valor3 * valor4 * valor5;
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: multiplicar (T valor1, T valor2, T valor3, T valor4, T valor5, T valor6) {
 	return valor1 * valor2 * valor3 * valor4 * valor5 * valor6;
 }
@@ -95,17 +95,17 @@ T Operaciones <T> :: multiplicar (T valor1, T valor2, T valor3, T valor4, T valo
 
 
 
-// calcular mayor
-plantilla < typename T>
+// Calcular el mayor
+template < typename T>
 T Operaciones <T> :: calcularMayor (T valor1, T valor2) {
-	if (valor1> = valor2) {
+	if (valor1 >= valor2) {
 		return valor1;
 	} else {
 		return valor2;
 	}
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: calcularMayor (T valor1, T valor2, T valor3) {
 		if (valor1> valor2 && valor1> valor3) {
 			return valor1;
@@ -120,44 +120,40 @@ T Operaciones <T> :: calcularMayor (T valor1, T valor2, T valor3) {
 		
 }
 
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: calcularMayor (T valor1, T valor2, T valor3, T valor4) {
-	if (valor1> = valor2) {
-		if (valor1> = valor3) {
-			if (valor1> = valor4) {
+	if (valor1 >= valor2) {
+		if (valor1 >= valor3) {
+			if (valor1 >= valor4) {
 				return valor1;
-			} más {
+			}else{
 				return valor4;
 			}
 		} else {
-			if (valor3> = valor4) {
+			if (valor3 >= valor4) {
 				return valor3;
-			} más {
+			}else{
 				return valor4;
 			}
 		}
 	} else {
-		if (valor2> = valor3) {
-			if (valor2> = valor4) {
+		if (valor2 >= valor3) {
+			if (valor2 >= valor4) {
 				return valor2;
-			} más {
+			}else{
 				return valor4;
 			}
 		} else {
-			if (valor3> = valor4) {
+			if (valor3 >= valor4) {
 				return valor3;
-			} más {
+			}else{
 				return valor4;
 			}
 		}
 	}
 }
 
-
-
-
-
-plantilla < typename T>
+template < typename T>
 T Operaciones <T> :: calcularMayor (T valor1, T valor2, T valor3, T valor4, T valor5) {
 		if (valor1> valor2 && valor1> valor3 && valor1> valor4 && valor1> valor5) {
 			return valor1;
@@ -180,18 +176,18 @@ T Operaciones <T> :: calcularMayor (T valor1, T valor2, T valor3, T valor4, T va
 			
 }
 
-plantilla <typename T>
-T operaciones <T>::calcularMayor(T valor1, T valor2, T valor3, T valor4, T valor5, Tvalor6){
-		if (valor1> valor2 && valor1> valor3 && valor1> valor4 && valor1> valor5) {
+template <typename T>
+T Operaciones <T>::calcularMayor(T valor1, T valor2, T valor3, T valor4, T valor5, T valor6){
+		if (valor1 > valor2 && valor1 > valor3 && valor1 > valor4 && valor1 > valor5) {
 			return valor1;
 		}
-		else   if (valor2> valor1 && valor2> valor3 && valor2> valor4 && valor2> valor5) {
+		else   if (valor2 > valor1 && valor2 > valor3 && valor2 > valor4 && valor2 > valor5) {
 			return valor2;
 		}
-		else   if (valor3> valor1 && valor3> valor2 && valor3> valor4 && valor3> valor5) {
+		else   if (valor3 > valor1 && valor3 > valor2 && valor3 > valor4 && valor3 > valor5) {
 			return valor3;
 		}
-		else   if (valor4> valor1 && valor4> valor3 && valor4> valor3 && valor4> valor5) {
+		else   if (valor4 > valor1 && valor4 > valor3 && valor4 > valor3 && valor4 > valor5) {
 			return valor2;
 		}
 		else   if (valor1 == valor2 && valor1 == valor3 && valor1 == 4 && valor1 == 5 ) {
@@ -200,7 +196,7 @@ T operaciones <T>::calcularMayor(T valor1, T valor2, T valor3, T valor4, T valor
 		else {
 			return valor5;
 		}
-		if (valor 5> valor1 && valor4>valor3 && valor3>valor2 && valor2>valor1 && valor4>valor5){
+		if (valor5 > valor1 && valor4 > valor3 && valor3 > valor2 && valor2 > valor1 && valor4 > valor5){
 			return valor6;
 		}
 }
