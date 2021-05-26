@@ -36,6 +36,5 @@ class Supermarket{
 		int getEmployee();
 		void setName(string);
 		void setDailyEarnings(float);
-		void setEmployee(int);
-		
+		void setEmployee(int);		
 };
