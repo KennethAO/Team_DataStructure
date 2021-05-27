@@ -3,9 +3,9 @@
 #include<math.h>
 using namespace std;
 
-int fact(int a){
+int fact(int t){
 	int F=1;
-	for(int i=1;i<=a;i++){
+	for(int i=1;i<=t;i++){
 		F=F*i;
 	}
 	return F;
