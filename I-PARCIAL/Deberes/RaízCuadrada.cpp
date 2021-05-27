@@ -1,25 +1,26 @@
 #include <iostream>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
+/*
+@author Brayan Patiño
+*/
 
 using namespace std;
 
-
-double raizCuadrada(double a){
-	double res;
+//FUNCION RAIZ CUADRADA
+double squareRoot(double a){
+	double remainder;
 	double i=0;
 	do{
-		i=i+0.000001;
-		res=i*i;		
-	}while(a>=res);
+		i+=0.000001;
+		remainder=i*i;		
+	}while(a>=remainder);
 	return i;
 }
 
+
+//VERIFICACION DE QUE FUNCIONA LA FUNCION
 using namespace std;
 int main(int argc, char** argv) {
-	cout<<"HOLA MUNDO"<<endl;
-	double a, total;
-	a=50;
-	cout << "LA RAIZ CUADRADA ES: "<<raizCuadrada(a)<<endl;
+	
+	cout << "LA RAIZ CUADRADA ES: "<<squareRoot(200)<<endl;
 }
