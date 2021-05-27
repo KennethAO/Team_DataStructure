@@ -26,8 +26,12 @@ int main(){
 			case 1: 
 					cout<<"Funcionalidad:'RAIZ CUADRADA' "<<endl;
 					cout<<"Ingrese el numero: ";
-					cin>>value;
-				    cout<<"La raiz cuadrada de "<<value<<" es: "<<functions.squareRoot(value);
+					cin>>value;	
+					while(value<0){
+					cout<<"NUMERO NEGATIVO, NO TIENE SOLUCION, POR FAVOR: Ingrese el numero nuevamente: ";
+					cin>>value;	
+					}
+					cout<<"La raiz cuadrada de "<<value<<" es: "<<functions.squareRoot(value);
 					break;
 			case 2:
 					cout<<"Funcionalidad:'SENO' "<<endl;
