@@ -1,9 +1,25 @@
+/**
+ * "Universidad de las Fuerzas Armadas ESPE"
+ * @file main.cpp
+ * @author Kenneth Andrade (koandrade@espe.edu.ec.)
+ * @author Rafael Buse (rebuse@espe.edu.ec)
+ * @author David CalvopiÃ±a (ldvalvopina@espe.edu.ec)
+ * @author Nicolas Hidrobo (anhidrobo@espe.edu.ec)
+ * @author Henry Tiamba (hatiamba@espe.edu.ec)
+ * @author Bryan PariÃ±o (baclavon@espe.edu.ec)
+ * @brief Funciones con operaciones matematicas
+ * @version 0.1
+ * @date 2021-05-27
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include <iostream>
 #include <stdlib.h>
 #include "Functions.cpp"
 
 using namespace std; 
 
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 int main(){
 	
 	int opc=0;
@@ -59,9 +75,7 @@ int main(){
 					break;
 			case 6:
 					cout<<"Funcionalidad:'PI' "<<endl;
-					cout<<"Ingrese el valor de posicion para PI: ";
-					cin>>value;
-				    cout<<"El valor de PI con el valor de posicion indicado es: "<<functions.calculatePi(value);
+					cout<<"El valor de  PI es de:  "<<functions.calculatePi(0.0001);
 					break;
 		}
 	}while(opc>6||opc<1);

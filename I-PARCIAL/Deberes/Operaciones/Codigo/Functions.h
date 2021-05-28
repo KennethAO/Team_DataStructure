@@ -1,7 +1,22 @@
-#include<iostream>
-
-using namespace std;
-
+/**
+ * "Universidad de las Fuerzas Armadas ESPE"
+ * @file main.cpp
+ * @author Kenneth Andrade (koandrade@espe.edu.ec.)
+ * @author Rafael Buse (rebuse@espe.edu.ec)
+ * @author David CalvopiÃ±a (ldvalvopina@espe.edu.ec)
+ * @author Nicolas Hidrobo (anhidrobo@espe.edu.ec)
+ * @author Henry Tiamba (hatiamba@espe.edu.ec)
+ * @author Bryan PariÃ±o (baclavon@espe.edu.ec)
+ * @brief Funciones con operaciones matematicas
+ * @version 0.1
+ * @date 2021-05-27
+ * @copyright Copyright (c) 2021
+ * 
+ */
+/**
+ * @brief Calcula mediante funciones las funciones matematicas
+ * @class Functions
+ */
 class Functions{	
 	private: 
 			double value;
