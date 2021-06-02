@@ -1,0 +1,105 @@
+
+/***********************************************************************
+ * Module:  Date.cpp
+ * Author:  Rafa
+ * Modified: Tuesday, June 1, 2021 12:53:55 PM
+ * Purpose: Implementation of the class Date
+ ***********************************************************************/
+#pragma once
+#include <iomanip>
+#include <sstream>
+#include <string>
+#include "Date.h"
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Date::Date(int _day, int _month, int _year)
+// Purpose:    Implementation of Date::Date()
+// Parameters:
+// - _day
+// - _month
+// - _year
+// Return:     
+////////////////////////////////////////////////////////////////////////
+Date::Date(int _day, int _month, int _year){
+   this->day = _day;
+   this->month = _month;
+   this->year = _year;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Date::~Date()
+// Purpose:    Implementation of Date::~Date()
+// Return:     
+////////////////////////////////////////////////////////////////////////
+
+// Date::~Date(){
+//    // TODO : implement
+// }
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Date::getDay()
+// Purpose:    Implementation of Date::getDay()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+int Date::getDay(){
+   return day;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Date::setDay(int newDay)
+// Purpose:    Implementation of Date::setDay()
+// Parameters:
+// - newDay
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Date::setDay(int newDay){
+   day = newDay;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Date::getMonth()
+// Purpose:    Implementation of Date::getMonth()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int Date::getMonth(){
+   return month;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Date::setMonth(int newMonth)
+// Purpose:    Implementation of Date::setMonth()
+// Parameters:
+// - newMonth
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Date::setMonth(int newMonth){
+   month = newMonth;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Date::getYear()
+// Purpose:    Implementation of Date::getYear()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int Date::getYear(){
+   return year;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Date::setYear(int newYear)
+// Purpose:    Implementation of Date::setYear()
+// Parameters:
+// - newYear
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Date::setYear(int newYear){
+   year = newYear;
+}
+
+
+
