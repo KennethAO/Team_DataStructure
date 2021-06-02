@@ -111,8 +111,17 @@ Operacion::~Operacion()
 // Return:     void
 ////////////////////////////////////////////////////////////////////////
 
-void Operacion::generar(void)
+void Operacion::generar()
 {
+	 for (int i = 0; i < m_rows; i++) {
+        for (int j = 0; j < m_cols; j++) {
+            m_matrix[i][j] = rand() % 30;
+        }
+    }
+
+    m_max = m_matrix[0][0];
+    m_min = m_matrix[0][0];
+    srand(time(NULL));
    // TODO : implement
 }
 
