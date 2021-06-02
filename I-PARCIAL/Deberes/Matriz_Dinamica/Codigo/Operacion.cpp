@@ -122,9 +122,12 @@ void Operacion::generar(void)
 // Return:     void
 ////////////////////////////////////////////////////////////////////////
 
-void Operacion::encerar(void)
+void Operacion::encerar(int **matriz, int dim)
 {
-   // TODO : implement
+    int i,j;
+    for(i=0;i<dim;i++)
+        for(j=0;j<dim;j++)
+        *(*(matriz+i)+j)=0;
 }
 
 ////////////////////////////////////////////////////////////////////////
