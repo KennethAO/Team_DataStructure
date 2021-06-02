@@ -11,13 +11,8 @@ class DateOperations{
             Date date;
             string days[7];
             string months[12];
-
-
-            
-    
     public:
         DateOperations(Date _date);
-        void enterDate();
-        bool validateDate();
-        bool leapDate();
+        bool enterDate();
+        string validateDay();
 };
