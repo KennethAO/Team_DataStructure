@@ -19,7 +19,8 @@ int main(int argc, char** argv) {
 	DateOperations ope(date);
 	bool flag;
 	do{
-		flag = ope.enterDate();
+		ope.enterDate();
+		flag = ope.checkDate();
 		if(flag == false){
 			cout<<"Fecha incorrecta vuelva a ingresar"<<endl;
 		}else{
@@ -27,7 +28,7 @@ int main(int argc, char** argv) {
 		}
 
 	}while(flag == false);
-	cout<<ope.validateDay();
+	cout<<"Fecha: "<<ope.generateInformatdate();
 	
 
 	// int day,month,year;

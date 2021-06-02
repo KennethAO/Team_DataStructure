@@ -13,6 +13,7 @@ class DateOperations{
             string months[12];
     public:
         DateOperations(Date _date);
-        bool enterDate();
-        string validateDay();
+        void enterDate();
+        bool checkDate();
+        string generateInformatdate();
 };

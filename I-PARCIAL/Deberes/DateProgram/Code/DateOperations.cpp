@@ -15,7 +15,7 @@ DateOperations::DateOperations(Date _date){
     months[6]="Julio";months[7]="Agosto";months[8]="Septiembre";months[9]="Octubre";months[10]="Noviembre";months[11]="Diciembre";
 }
 
-bool DateOperations::enterDate(){
+void DateOperations::enterDate(){
     int day,month,year;
     
     cout<<"\nIngrese dia: ";
@@ -27,10 +27,25 @@ bool DateOperations::enterDate(){
     date.setDay(day);
     date.setMonth(month);
     date.setYear(year);
-    return validateDate(date.getDay(),date.getMonth(),date.getYear());
 }
 
-string DateOperations::validateDay(){
+bool DateOperations::checkDate(){
+    bool flag;
+    if(validateDate(date.getDay(),date.getMonth(),date.getYear())){
+        int day = zeller(date.getDay(),date.getMonth(),date.getYear());
+        if(day == 0 || day == 6){
+            flag = false;
+        }
+        else{
+            flag = true;
+        }
+    }else{
+        flag = true;
+    }
+    return flag;
+}
+
+string DateOperations::generateInformatdate(){
     int numberDay;
     string day,month,year,d = "";
     numberDay = zeller(date.getDay(),date.getMonth(),date.getYear());
