@@ -30,6 +30,9 @@ int main(int argc, char** argv) {
 	}while(flag == false);
 	cout<<"Fecha: "<<ope.generateInformatdate();
 	
+	
+	
+	
 
 	// int day,month,year;
 	// day = 16;

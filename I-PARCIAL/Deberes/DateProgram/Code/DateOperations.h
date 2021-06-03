@@ -16,4 +16,5 @@ class DateOperations{
         void enterDate();
         bool checkDate();
         string generateInformatdate();
+        //void printDates(Date,int );
 };

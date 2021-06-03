@@ -1,4 +1,4 @@
-#pragma once
+//#pragma once
 #include <iostream>
 #include <ctime>
 #include <string>
@@ -8,8 +8,6 @@
 
 using namespace std;
 
-using std::cout; using std::cin;
-using std::endl; using std::string;
 
 
 DateOperations::DateOperations(Date _date){
@@ -44,7 +42,7 @@ bool DateOperations::checkDate(){
             flag = true;
         }
     }else{
-        flag = true;
+        flag = false;
     }
     return flag;
 }
@@ -70,9 +68,15 @@ string DateOperations::generateInformatdate(){
     d += " de ";
     d += to_string(date.getYear());
     return d;
-
-   
+  
 }
+
+/* void DataOperations::printDates(Date dates[], int dim){
+	for (int i = 0; i < dim; i++) {
+		cout << "Ustede debe pagar las fechas: \n" <<endl;
+		cout << dates[i] << "\n" << endl; 
+	}
+} */
 
 
 
