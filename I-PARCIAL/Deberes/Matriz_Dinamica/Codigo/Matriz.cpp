@@ -64,6 +64,16 @@ void Matriz::setColumna_(int newColumna_)
 // Return:     
 ////////////////////////////////////////////////////////////////////////
 
+int **Matriz::getMatriz_(void){
+	return matriz;
+}
+void Matriz::setMatriz_(int **newMatriz_){
+	matriz=newMatriz_;
+}
+
+
+
+
 Matriz::Matriz(int _fila, int _columna)
 {
    // TODO : implement
@@ -75,7 +85,7 @@ Matriz::Matriz(int _fila, int _columna)
 // Return:     
 ////////////////////////////////////////////////////////////////////////
 
-Matriz::~Matriz()
+/*Matriz::~Matriz()
 {
    // TODO : implement
-}
+}*/

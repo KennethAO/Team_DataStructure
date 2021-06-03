@@ -19,11 +19,11 @@ public:
    void setMatriz2(Matriz newMatriz2);
    Matriz getMatrizR(void);
    void setMatrizR(Matriz newMatrizR);
-   Operacion(Matriz matriz1, Matriz matriz2, Matriz matriz3);
-   ~Operacion();
+   Operacion(Matriz matriz1, Matriz matriz2);
+   //~Operacion();
    Operacion()=default;
    void generar(void);
-   void encerar(void);
+   void encerar(int **,int);
    void procesar(int exponente);
    void imprimir_(void);
    void segmentar(void);

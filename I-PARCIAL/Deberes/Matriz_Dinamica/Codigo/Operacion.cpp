@@ -6,6 +6,11 @@
  ***********************************************************************/
 
 #include "Operacion.h"
+#include "Matriz.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include<time.h>
+
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::getMatriz1()
@@ -89,9 +94,10 @@ void Operacion::setMatrizR(Matriz newMatrizR)
 // Return:     
 ////////////////////////////////////////////////////////////////////////
 
-Operacion::Operacion(Matriz matriz1, Matriz matriz2, Matriz matriz3)
+Operacion::Operacion(Matriz matriz1, Matriz matriz2)
 {
-   // TODO : implement
+   this->matriz1=matriz1;
+   this->matriz2=matriz2;
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -100,10 +106,10 @@ Operacion::Operacion(Matriz matriz1, Matriz matriz2, Matriz matriz3)
 // Return:     
 ////////////////////////////////////////////////////////////////////////
 
-Operacion::~Operacion()
+/*Operacion::~Operacion()
 {
    // TODO : implement
-}
+}*/
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::generar()
@@ -111,9 +117,20 @@ Operacion::~Operacion()
 // Return:     void
 ////////////////////////////////////////////////////////////////////////
 
-void Operacion::generar(void)
+void Operacion::generar()
 {
-   // TODO : implement
+	
+	srand(time(NULL));
+	//Rand para matriz 1
+	int i, j;
+	for (i = 0; i < matriz1.getFila_(); i++)
+		for (j = 0; j < matriz1.getColumna_(); j++)
+			*(*(matriz1.getMatriz_() + i) + j) = rand() % 9;
+	
+	//Rand para matriz 2
+	for (i = 0; i < matriz2.getFila_(); i++)
+		for (j = 0; j < matriz2.getColumna_(); j++)
+			*(*(matriz2.getMatriz_() + i) + j) = rand() % 9;
 }
 
 ////////////////////////////////////////////////////////////////////////
