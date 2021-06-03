@@ -6,10 +6,18 @@
  ***********************************************************************/
 
 #include "Operacion.h"
+<<<<<<< HEAD
 #include <iostream>
 #include <cstdlib>
 
 using namespace std;
+=======
+#include "Matriz.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include<time.h>
+
+>>>>>>> 027065dc74d8ad310964fd9f494c98eb9e150b68
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::getMatriz1()
@@ -93,9 +101,10 @@ void Operacion::setMatrizR(Matriz newMatrizR)
 // Return:     
 ////////////////////////////////////////////////////////////////////////
 
-Operacion::Operacion(Matriz matriz1, Matriz matriz2, Matriz matriz3)
+Operacion::Operacion(Matriz matriz1, Matriz matriz2)
 {
-   // TODO : implement
+   this->matriz1=matriz1;
+   this->matriz2=matriz2;
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -104,10 +113,10 @@ Operacion::Operacion(Matriz matriz1, Matriz matriz2, Matriz matriz3)
 // Return:     
 ////////////////////////////////////////////////////////////////////////
 
-Operacion::~Operacion()
+/*Operacion::~Operacion()
 {
    // TODO : implement
-}
+}*/
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::generar()
@@ -117,16 +126,18 @@ Operacion::~Operacion()
 
 void Operacion::generar()
 {
-	 for (int i = 0; i < m_rows; i++) {
-        for (int j = 0; j < m_cols; j++) {
-            m_matrix[i][j] = rand() % 30;
-        }
-    }
-
-    m_max = m_matrix[0][0];
-    m_min = m_matrix[0][0];
-    srand(time(NULL));
-   // TODO : implement
+	
+	srand(time(NULL));
+	//Rand para matriz 1
+	int i, j;
+	for (i = 0; i < matriz1.getFila_(); i++)
+		for (j = 0; j < matriz1.getColumna_(); j++)
+			*(*(matriz1.getMatriz_() + i) + j) = rand() % 9;
+	
+	//Rand para matriz 2
+	for (i = 0; i < matriz2.getFila_(); i++)
+		for (j = 0; j < matriz2.getColumna_(); j++)
+			*(*(matriz2.getMatriz_() + i) + j) = rand() % 9;
 }
 
 ////////////////////////////////////////////////////////////////////////
