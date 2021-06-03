@@ -6,18 +6,18 @@
  ***********************************************************************/
 
 #include "Operacion.h"
-<<<<<<< HEAD
+
 #include <iostream>
 #include <cstdlib>
 
 using namespace std;
-=======
+
 #include "Matriz.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include<time.h>
 
->>>>>>> 027065dc74d8ad310964fd9f494c98eb9e150b68
+
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::getMatriz1()

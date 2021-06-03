@@ -23,11 +23,11 @@ public:
    //~Operacion();
    Operacion()=default;
    void generar(void);
-<<<<<<< HEAD
+
    void encerar(int **, int);
-=======
+
    void encerar(int **,int);
->>>>>>> 027065dc74d8ad310964fd9f494c98eb9e150b68
+
    void procesar(int exponente);
    void imprimir(int **, int);
    void segmentar(void);
