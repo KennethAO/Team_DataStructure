@@ -8,36 +8,33 @@
 #if !defined(__Matriz_Operacion_h)
 #define __Matriz_Operacion_h
 
-#include "Matriz.cpp"
+#include "Matriz.h"
 
 class Operacion
 {
 public:
    Matriz getMatriz1(void);
    void setMatriz1(Matriz newMatriz1);
-   Matriz getMatriz2(void);
-   void setMatriz2(Matriz newMatriz2);
    Matriz getMatrizR(void);
    void setMatrizR(Matriz newMatrizR);
-   Operacion(Matriz matriz1, Matriz matriz2);
+   Matriz getMatrizAux(void);
+   void setMatrizAux(Matriz newMatrizAux);
+   Operacion(Matriz matriz1);
+   void segmentar(void);
    //~Operacion();
    Operacion()=default;
    void generar(void);
-
-   void encerar(int **, int);
-
-   void encerar(int **,int);
-
+   void encerar(Matriz _matriz);
    void procesar(int exponente);
-   void imprimir(int **, int);
-   void segmentar(void);
+   void imprimir_(void);
+   //void segmentar(void);
 
 protected:
+	
 private:
    Matriz matriz1;
-   Matriz matriz2;
    Matriz matrizR;
-
+   Matriz matrizAux;
 
 };
 

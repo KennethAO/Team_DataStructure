@@ -6,18 +6,12 @@
  ***********************************************************************/
 
 #include "Operacion.h"
-
-#include <iostream>
-#include <cstdlib>
-
-using namespace std;
-
-#include "Matriz.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include<time.h>
+#include<iostream>
 
-
+using namespace std; 
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::getMatriz1()
@@ -40,7 +34,7 @@ Matriz Operacion::getMatriz1(void)
 
 void Operacion::setMatriz1(Matriz newMatriz1)
 {
-   matriz1 = newMatriz1;
+	matriz1 = newMatriz1; 
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -49,10 +43,6 @@ void Operacion::setMatriz1(Matriz newMatriz1)
 // Return:     Matriz
 ////////////////////////////////////////////////////////////////////////
 
-Matriz Operacion::getMatriz2(void)
-{
-   return matriz2;
-}
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::setMatriz2(Matriz newMatriz2)
@@ -62,10 +52,6 @@ Matriz Operacion::getMatriz2(void)
 // Return:     void
 ////////////////////////////////////////////////////////////////////////
 
-void Operacion::setMatriz2(Matriz newMatriz2)
-{
-   matriz2 = newMatriz2;
-}
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::getMatrizR()
@@ -100,11 +86,15 @@ void Operacion::setMatrizR(Matriz newMatrizR)
 // - matriz3
 // Return:     
 ////////////////////////////////////////////////////////////////////////
-
-Operacion::Operacion(Matriz matriz1, Matriz matriz2)
+void Operacion::setMatrizAux(Matriz newMatrizAux){
+	matrizAux=newMatrizAux;
+}
+Matriz Operacion::getMatrizAux(void){
+	return matrizAux; 
+}
+Operacion::Operacion(Matriz matriz1)
 {
    this->matriz1=matriz1;
-   this->matriz2=matriz2;
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -126,18 +116,12 @@ Operacion::Operacion(Matriz matriz1, Matriz matriz2)
 
 void Operacion::generar()
 {
-	
 	srand(time(NULL));
 	//Rand para matriz 1
 	int i, j;
 	for (i = 0; i < matriz1.getFila_(); i++)
-		for (j = 0; j < matriz1.getColumna_(); j++)
-			*(*(matriz1.getMatriz_() + i) + j) = rand() % 9;
-	
-	//Rand para matriz 2
-	for (i = 0; i < matriz2.getFila_(); i++)
-		for (j = 0; j < matriz2.getColumna_(); j++)
-			*(*(matriz2.getMatriz_() + i) + j) = rand() % 9;
+		for (j = 0; j < matriz1.getColumna_(); j++)//10-0
+			*(*(matriz1.getMatriz_() + i) + j) = rand() % (3-1);
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -146,12 +130,13 @@ void Operacion::generar()
 // Return:     void
 ////////////////////////////////////////////////////////////////////////
 
-void Operacion::encerar(int **matriz, int dim)
-{
-    int i,j;
-    for(i=0;i<dim;i++)
-        for(j=0;j<dim;j++)
-        *(*(matriz+i)+j)=0;
+void Operacion::encerar(Matriz _matriz)
+{ 
+    for(int i=0;i<_matriz.getFila_();i++){
+    	for(int j=0;j<_matriz.getColumna_();j++){
+    		*(*(_matriz.getMatriz_() + i) + j) = 0;
+		}
+	}
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -163,29 +148,56 @@ void Operacion::encerar(int **matriz, int dim)
 ////////////////////////////////////////////////////////////////////////
 
 void Operacion::procesar(int exponente)
-{
-   // TODO : implement
+{	
+	int num = 1;
+	if(matriz1.getFila_()==matriz1.getColumna_()){
+		while(exponente!=num){
+			for(int i =0;i<matriz1.getFila_();i++){
+				for(int j=0;j<matriz1.getColumna_();j++){
+					for(int k=0;k<matriz1.getFila_();k++){
+						if(num==1){
+							*(*(matrizR.getMatriz_()+i)+j)=*(*(matrizR.getMatriz_()+i)+j)+(*(*(matriz1.getMatriz_()+i)+k))*(*(*(matriz1.getMatriz_()+k)+j));
+						}
+						else
+						{
+							*(*(matrizR.getMatriz_()+i)+j)=*(*(matrizAux.getMatriz_()+i)+j)+(*(*(matriz1.getMatriz_()+i)+k))*(*(*(matrizR.getMatriz_()+k)+j));
+						}
+					}
+				}
+			}
+			
+			num++;
+		}
 }
-
+else{
+	cout<<"No se puede elevar la matriz porque su numero de filas y columnas no es el mismo"<<endl; 
+}
+}
 ////////////////////////////////////////////////////////////////////////
-// Name:       Operacion::imprimir()
-// Purpose:    Implementation of Operacion::imprimir()
+// Name:       Operacion::imprimir_()
+// Purpose:    Implementation of Operacion::imprimir_()
 // Return:     void
 ////////////////////////////////////////////////////////////////////////
 
-void Operacion::imprimir(int **matriz, int dim)
+void Operacion::imprimir_(void)
 {
-	int i,j;
-    for(i=0;i<dim;i++){
-        for(j=0;j<dim;j++){
-            cout<<"%d"<<*(*(matriz+i)+j)<<endl;
-            cout<<"%*s"<<j+5<<""<<endl;
-        }
-        cout<<"\n"<<endl;    
-    }
-   
- // TODO : implement
+	cout<<"Matriz 1"<<endl<<endl;
+   for(int i =0;i<matriz1.getFila_();i++){
+			for(int j=0;j<matriz1.getColumna_();j++){
+				cout<<"  "<<*(*(matriz1.getMatriz_()+i)+j);
+			}
+			cout<<endl; 
+		}	
+	
+	cout<<"Matriz Potenciacion"<<endl<<endl;
+   for(int i =0;i<matrizR.getFila_();i++){
+			for(int j=0;j<matrizR.getColumna_();j++){
+				cout<<"  "<<*(*(matrizR.getMatriz_()+i)+j);
+			}
+			cout<<endl; 
+		}
 }
+
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::segmentar()
@@ -193,7 +205,34 @@ void Operacion::imprimir(int **matriz, int dim)
 // Return:     void
 ////////////////////////////////////////////////////////////////////////
 
-void Operacion::segmentar(void)
+void Operacion::segmentar()
 {
-   // TODO : implement
+	int **matriz,j;
+	
+	matriz=(int **)malloc(matriz1.getFila_()*sizeof(int *));
+	for(j=0;j<matriz1.getFila_();j++)
+		*(matriz+j)=(int *)malloc(matriz1.getColumna_()*sizeof(int));
+	matriz1.setMatriz_(matriz);
+	encerar(matriz1);
+	
+	if(matriz1.getFila_()==matriz1.getColumna_()){
+		int **matrizRes;
+		matrizR.setFila_(matriz1.getFila_());
+		matrizR.setColumna_(matriz1.getColumna_());	
+		matrizRes=(int **)malloc(matrizR.getFila_()*sizeof(int *));
+		for(j=0;j<matrizR.getFila_();j++)
+			*(matrizRes+j)=(int *)malloc(matrizR.getColumna_()*sizeof(int));
+		matrizR.setMatriz_(matrizRes);
+		encerar(matrizR);
+		
+		
+		int **matAux;
+		matrizAux.setFila_(matriz1.getFila_());
+		matrizAux.setColumna_(matriz1.getColumna_());	
+		matAux=(int **)malloc(matrizAux.getFila_()*sizeof(int *));
+		for(j=0;j<matrizAux.getFila_();j++)
+			*(matAux+j)=(int *)malloc(matrizAux.getColumna_()*sizeof(int));
+		matrizAux.setMatriz_(matAux);
+		encerar(matrizAux);
+	}
 }

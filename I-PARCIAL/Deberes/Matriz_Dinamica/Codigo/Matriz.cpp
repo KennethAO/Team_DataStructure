@@ -68,15 +68,13 @@ int **Matriz::getMatriz_(void){
 	return matriz;
 }
 void Matriz::setMatriz_(int **newMatriz_){
-	matriz=newMatriz_;
+	matriz = newMatriz_;
 }
-
-
-
 
 Matriz::Matriz(int _fila, int _columna)
 {
-   // TODO : implement
+   fila_ = _fila;
+   columna_ = _columna; 
 }
 
 ////////////////////////////////////////////////////////////////////////
