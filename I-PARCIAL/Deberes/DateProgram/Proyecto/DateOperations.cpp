@@ -1,8 +1,4 @@
-<<<<<<< HEAD:I-PARCIAL/Deberes/DateProgram/Code/DateOperations.cpp
-//#pragma once
-=======
 
->>>>>>> 9685debd477272ab9441a46d991ed8e23ffbbb45:I-PARCIAL/Deberes/DateProgram/Proyecto/DateOperations.cpp
 #include <iostream>
 #include <ctime>
 #include <string>
@@ -13,11 +9,6 @@
 
 using namespace std;
 
-<<<<<<< HEAD:I-PARCIAL/Deberes/DateProgram/Code/DateOperations.cpp
-
-
-=======
->>>>>>> 9685debd477272ab9441a46d991ed8e23ffbbb45:I-PARCIAL/Deberes/DateProgram/Proyecto/DateOperations.cpp
 DateOperations::DateOperations(Date _date){
     this->date = _date;
     days[0]="Domingo";days[1]="Lunes";days[2]="Martes";days[3]="Miercoles";days[4]="Jueves";days[5]="Viernes";days[6]="Sabado";
@@ -75,9 +66,6 @@ string DateOperations::generateInformatdate(){
     d += " de ";
     d += to_string(date.getYear());
     return d;
-<<<<<<< HEAD:I-PARCIAL/Deberes/DateProgram/Code/DateOperations.cpp
-  
-=======
 }
 void DateOperations::generateDate(int numbermonth){
     int day,month,year;
@@ -119,15 +107,7 @@ int DateOperations::enterPaymentLimit(){
     }while(validateNumber(numberMonth)==false);
 
     return numberMonth;
->>>>>>> 9685debd477272ab9441a46d991ed8e23ffbbb45:I-PARCIAL/Deberes/DateProgram/Proyecto/DateOperations.cpp
 }
-
-/* void DataOperations::printDates(Date dates[], int dim){
-	for (int i = 0; i < dim; i++) {
-		cout << "Ustede debe pagar las fechas: \n" <<endl;
-		cout << dates[i] << "\n" << endl; 
-	}
-} */
 
 
 

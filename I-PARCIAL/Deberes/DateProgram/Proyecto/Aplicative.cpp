@@ -29,15 +29,7 @@ int main(int argc, char** argv) {
 		}
 
 	}while(flag == false);
-<<<<<<< HEAD:I-PARCIAL/Deberes/DateProgram/Code/Aplicative.cpp
-	cout<<"Fecha: "<<ope.generateInformatdate();
-	
-	
-	
-	
-=======
 	ope.generateDate(ope.enterPaymentLimit());
->>>>>>> 9685debd477272ab9441a46d991ed8e23ffbbb45:I-PARCIAL/Deberes/DateProgram/Proyecto/Aplicative.cpp
 
 	
 	return 0;

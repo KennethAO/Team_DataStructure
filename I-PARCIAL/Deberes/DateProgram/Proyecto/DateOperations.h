@@ -19,9 +19,5 @@ class DateOperations{
         void enterDate();
         bool checkDate();
         string generateInformatdate();
-<<<<<<< HEAD:I-PARCIAL/Deberes/DateProgram/Code/DateOperations.h
-        //void printDates(Date,int );
-=======
         void generateDate(int);
->>>>>>> 9685debd477272ab9441a46d991ed8e23ffbbb45:I-PARCIAL/Deberes/DateProgram/Proyecto/DateOperations.h
 };
