@@ -1,8 +1,9 @@
 
+
 #include <iostream>
-#include "DateOperations.cpp"
-#include "Date.cpp"
-#include <ctime>
+//#include "DateOperations.cpp"
+#include "DateOperations.h"
+
 using namespace std;
 
 // int zeller(int day,int month,int year){
@@ -28,16 +29,16 @@ int main(int argc, char** argv) {
 		}
 
 	}while(flag == false);
+<<<<<<< HEAD:I-PARCIAL/Deberes/DateProgram/Code/Aplicative.cpp
 	cout<<"Fecha: "<<ope.generateInformatdate();
 	
 	
 	
 	
+=======
+	ope.generateDate(ope.enterPaymentLimit());
+>>>>>>> 9685debd477272ab9441a46d991ed8e23ffbbb45:I-PARCIAL/Deberes/DateProgram/Proyecto/Aplicative.cpp
 
-	// int day,month,year;
-	// day = 16;
-	// month = 6;
-	// year = 2021;
-	// cout<<zeller(day,month,year);
+	
 	return 0;
 }

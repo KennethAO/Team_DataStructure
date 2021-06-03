@@ -1,15 +1,23 @@
+<<<<<<< HEAD:I-PARCIAL/Deberes/DateProgram/Code/DateOperations.cpp
 //#pragma once
+=======
+
+>>>>>>> 9685debd477272ab9441a46d991ed8e23ffbbb45:I-PARCIAL/Deberes/DateProgram/Proyecto/DateOperations.cpp
 #include <iostream>
 #include <ctime>
 #include <string>
+#include <string.h>
 #include "DateOperations.h"
 #include "Validation.cpp"
 
 
 using namespace std;
 
+<<<<<<< HEAD:I-PARCIAL/Deberes/DateProgram/Code/DateOperations.cpp
 
 
+=======
+>>>>>>> 9685debd477272ab9441a46d991ed8e23ffbbb45:I-PARCIAL/Deberes/DateProgram/Proyecto/DateOperations.cpp
 DateOperations::DateOperations(Date _date){
     this->date = _date;
     days[0]="Domingo";days[1]="Lunes";days[2]="Martes";days[3]="Miercoles";days[4]="Jueves";days[5]="Viernes";days[6]="Sabado";
@@ -19,7 +27,6 @@ DateOperations::DateOperations(Date _date){
 
 void DateOperations::enterDate(){
     int day,month,year;
-    
     cout<<"\nIngrese dia: ";
     cin>>day;
     cout<<"Ingrese mes: ";
@@ -56,7 +63,7 @@ string DateOperations::generateInformatdate(){
         if(i == numberDay ){
             d += days[i];
             d += " ";
-            d += to_string(date.getDay());
+            d += to_string(date.getDay());    
         }
     }
     for(int i=0;i<12;i++){
@@ -68,7 +75,51 @@ string DateOperations::generateInformatdate(){
     d += " de ";
     d += to_string(date.getYear());
     return d;
+<<<<<<< HEAD:I-PARCIAL/Deberes/DateProgram/Code/DateOperations.cpp
   
+=======
+}
+void DateOperations::generateDate(int numbermonth){
+    int day,month,year;
+    day = date.getDay();
+    month = date.getMonth();
+    year = date.getYear();
+    for(int j=0;j<numbermonth;j++){
+        for(int i=0;i<31;i++){
+            day++;
+            if(day > verifyDayInMonth(month,year)){
+                day = 1;
+                month++;
+                if(month > 12){
+                    month = 1;
+                    year++;
+                }
+            }
+        }
+        int a = zeller(day,month,year);
+        if(a == 0){
+            day++;
+        }if(a== 6){
+            day--;
+        }
+        date.setDay(day);date.setMonth(month);date.setYear(year);
+        cout<<generateInformatdate()<<endl;
+    }
+}
+
+int DateOperations::enterPaymentLimit(){
+    
+    int numberMonth;
+    do{
+        cout<<"\nIngrese el numero de meses: ";
+        cin>>numberMonth;
+        if(validateNumber(numberMonth)==false){
+            cout<<"Dato ingresado no valido";
+        }
+    }while(validateNumber(numberMonth)==false);
+
+    return numberMonth;
+>>>>>>> 9685debd477272ab9441a46d991ed8e23ffbbb45:I-PARCIAL/Deberes/DateProgram/Proyecto/DateOperations.cpp
 }
 
 /* void DataOperations::printDates(Date dates[], int dim){
@@ -77,6 +128,7 @@ string DateOperations::generateInformatdate(){
 		cout << dates[i] << "\n" << endl; 
 	}
 } */
+
 
 
 

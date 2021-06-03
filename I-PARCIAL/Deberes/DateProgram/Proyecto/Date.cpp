@@ -5,7 +5,7 @@
  * Modified: Tuesday, June 1, 2021 12:53:55 PM
  * Purpose: Implementation of the class Date
  ***********************************************************************/
-#pragma once
+
 #include <iomanip>
 #include <sstream>
 #include <string>

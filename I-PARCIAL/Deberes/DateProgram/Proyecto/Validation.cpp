@@ -1,9 +1,35 @@
+static bool verifyLeapYear(int year){
+
+    if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+        return true;
+    }else{
+        return false;
+    }
+   
+}
+
+static int verifyDayInMonth(int month,int year){
+    int day = 31;
+    if(month == 4 ||month == 6 ||month == 9 || month == 11){
+        day = 30;
+    }else if (month == 2){
+        if(verifyLeapYear(year)){
+            day = 29;
+        }else{
+            day = 28;
+        }
+    }
+
+    return day;
+}
+
 
 
 static bool validateDate(int day, int month, int year){
     bool flag;
+    
     if(year>=1900 && year<=2100){
-        if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+        if(verifyLeapYear(year)){
             if(month>=1 && month<=12){
                 if(month==4 || month==6 || month==9 || month==11){
                     if(day>=1 && day<=30){
@@ -69,3 +95,17 @@ static int zeller(int day,int month,int year){
 	int d = (day + y + y/4 - y/100 + y/400 + (31*m)/12)%7;
     return d;
 }
+
+static bool validateNumber(int number){
+    if(number > 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+}
+
+
+
+
