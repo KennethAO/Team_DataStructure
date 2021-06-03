@@ -23,9 +23,9 @@ public:
    ~Operacion();
    Operacion()=default;
    void generar(void);
-   void encerar(void);
+   void encerar(int **, int);
    void procesar(int exponente);
-   void imprimir_(void);
+   void imprimir(int **, int);
    void segmentar(void);
 
 protected:

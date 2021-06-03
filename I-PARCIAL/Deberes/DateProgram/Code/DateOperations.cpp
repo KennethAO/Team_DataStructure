@@ -8,6 +8,10 @@
 
 using namespace std;
 
+using std::cout; using std::cin;
+using std::endl; using std::string;
+
+
 DateOperations::DateOperations(Date _date){
     this->date = _date;
     days[0]="Domingo";days[1]="Lunes";days[2]="Martes";days[3]="Miercoles";days[4]="Jueves";days[5]="Viernes";days[6]="Sabado";
@@ -44,6 +48,7 @@ bool DateOperations::checkDate(){
     }
     return flag;
 }
+
 
 string DateOperations::generateInformatdate(){
     int numberDay;

@@ -6,6 +6,10 @@
  ***********************************************************************/
 
 #include "Operacion.h"
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::getMatriz1()
@@ -153,14 +157,23 @@ void Operacion::procesar(int exponente)
 }
 
 ////////////////////////////////////////////////////////////////////////
-// Name:       Operacion::imprimir_()
-// Purpose:    Implementation of Operacion::imprimir_()
+// Name:       Operacion::imprimir()
+// Purpose:    Implementation of Operacion::imprimir()
 // Return:     void
 ////////////////////////////////////////////////////////////////////////
 
-void Operacion::imprimir_(void)
+void Operacion::imprimir(int **matriz, int dim)
 {
-   // TODO : implement
+	int i,j;
+    for(i=0;i<dim;i++){
+        for(j=0;j<dim;j++){
+            cout<<"%d"<<*(*(matriz+i)+j)<<endl;
+            cout<<"%*s"<<j+5<<""<<endl;
+        }
+        cout<<"\n"<<endl;    
+    }
+   
+ // TODO : implement
 }
 
 ////////////////////////////////////////////////////////////////////////
