@@ -1,13 +1,36 @@
-
+/***********************************************************************
+ * Universidad de las fuerzas armadas ESPE
+ * Nrc:     3685
+ * Module:  DateOperations.cpp
+ * Author:  Andrade Kenneth
+ * Author:  Buse Rafael 
+ * Author:  Calvopiña David
+ * Author:  Hidrobo Nicolas
+ * Autor:   Patiño Bryan
+ * Author:  Tiamba Henry
+ * Version:  01
+ * Modified: Tuesday, June 1, 2021 12:53:55 PM
+ * Purpose: Details of prototyps of the functions of DateOperations
+ ***********************************************************************/
 #include <iostream>
 #include <ctime>
 #include <string>
 #include <string.h>
+#include <conio.h>
+
 #include "DateOperations.h"
 #include "Validation.cpp"
 
 
 using namespace std;
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Matriz::DateOperations(int _matriz)
+// Purpose:    Implementation of DateOperations::DateOperations()
+// Parameters:
+// - _date
+// Return:     
+////////////////////////////////////////////////////////////////////////
 
 DateOperations::DateOperations(Date _date){
     this->date = _date;
@@ -16,18 +39,56 @@ DateOperations::DateOperations(Date _date){
     months[6]="Julio";months[7]="Agosto";months[8]="Septiembre";months[9]="Octubre";months[10]="Noviembre";months[11]="Diciembre";
 }
 
+////////////////////////////////////////////////////////////////////////
+// Name:       DateOperations::ingresar(char *msj)
+// Purpose:    Implementation of DateOperations::ingresar()
+// Parameters:
+// -*msj
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int DateOperations::ingresar(char *msj){
+    char dat[8];
+    int i=0,valor;
+    char c;
+    printf("%s",msj);
+    while((c=getch())!=13){
+        if(c>='0' && c<='9'){
+            printf("%c",c);
+            dat[i++]=c;
+        }
+    }
+    dat[i]='\0';
+    valor=atoi(dat);
+    return valor;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       DateOperations::enterData()
+// Purpose:    Implementation of DateOperations::enterData()
+// Parameters:
+// - 
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
 void DateOperations::enterDate(){
-    int day,month,year;
-    cout<<"\nIngrese dia: ";
-    cin>>day;
-    cout<<"Ingrese mes: ";
-    cin>>month;
-    cout<<"Ingrese anio: ";
-    cin>>year;
+    int day=0,month=0,year=0;
+    day=ingresar("\n Ingrese el dia: ");
+    month=ingresar("\n Ingrese el mes: ");
+    year=ingresar("\n Ingrese el anio: ");
+    cout<<endl;
     date.setDay(day);
     date.setMonth(month);
     date.setYear(year);
 }
+
+////////////////////////////////////////////////////////////////////////
+// Name:       DateOperations::checkDate()
+// Purpose:    Implementation of DateOperations::checkDate()
+// Parameters:
+// -*msj
+// Return:     bool
+////////////////////////////////////////////////////////////////////////
 
 bool DateOperations::checkDate(){
     bool flag;
@@ -45,6 +106,13 @@ bool DateOperations::checkDate(){
     return flag;
 }
 
+////////////////////////////////////////////////////////////////////////
+// Name:       DateOperations::generateInformtdate()
+// Purpose:    Implementation of DateOperations::generateInformatdate()
+// Parameters:
+// -
+// Return:     string
+////////////////////////////////////////////////////////////////////////
 
 string DateOperations::generateInformatdate(){
     int numberDay;
@@ -67,6 +135,15 @@ string DateOperations::generateInformatdate(){
     d += to_string(date.getYear());
     return d;
 }
+
+////////////////////////////////////////////////////////////////////////
+// Name:       DateOperations::generateDate()
+// Purpose:    Implementation of DateOperations::generateDate()
+// Parameters:
+// - numbermonth
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
 void DateOperations::generateDate(int numbermonth){
     int day,month,year;
     day = date.getDay();
@@ -95,6 +172,14 @@ void DateOperations::generateDate(int numbermonth){
     }
 }
 
+////////////////////////////////////////////////////////////////////////
+// Name:       DateOperations::enterPaymentLimit()
+// Purpose:    Implementation of DateOperations::enterPaymentLimit()
+// Parameters:
+// - 
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
 int DateOperations::enterPaymentLimit(){
     
     int numberMonth;
@@ -108,6 +193,7 @@ int DateOperations::enterPaymentLimit(){
 
     return numberMonth;
 }
+
 
 
 

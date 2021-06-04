@@ -1,13 +1,20 @@
 /***********************************************************************
+ * Universidad de las fuerzas armadas ESPE
+ * Nrc:     3685
  * Module:  Date.h
- * Author:  Rafa
+ * Author:  Andrade Kenneth
+ * Author:  Buse Rafael 
+ * Author:  Calvopiña David
+ * Author:  Hidrobo Nicolas
+ * Autor:   Patiño Bryan
+ * Author:  Tiamba Henry
+ * Version:  01
  * Modified: Tuesday, June 1, 2021 12:53:55 PM
- * Purpose: Declaration of the class Date
+ * Purpose: Prototyps of the class Date.h
  ***********************************************************************/
 #pragma once
 #if !defined(__Class_Diagram_1_Date_h)
 #define __Class_Diagram_1_Date_h
-
 
 class Date{
    protected:

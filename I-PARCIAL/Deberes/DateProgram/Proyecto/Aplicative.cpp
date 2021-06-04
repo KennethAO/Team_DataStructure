@@ -1,19 +1,24 @@
-
+/***********************************************************************
+ * Universidad de las fuerzas armadas ESPE
+ * Nrc:     3685
+ * Module:  Aplicative.cpp
+ * Author:  Andrade Kenneth
+ * Author:  Buse Rafael 
+ * Author:  Calvopiña David
+ * Author:  Hidrobo Nicolas
+ * Autor:   Patiño Bryan
+ * Author:  Tiamba Henry
+ * Version:  01
+ * Modified: Tuesday, June 1, 2021 12:53:55 PM
+ * Purpose: Declaration of the class Date
+ ***********************************************************************/
 
 #include <iostream>
-//#include "DateOperations.cpp"
 #include "DateOperations.h"
 
 using namespace std;
 
-// int zeller(int day,int month,int year){
 
-// 	int a = (14-month)/12;
-// 	int y = year - a;
-// 	int m = month +12 * a-2;
-// 	int d = (day + y + y/4 - y/100 + y/400 + (31*m)/12)%7;
-
-// }
 int main(int argc, char** argv) {
 	
 	Date date;
@@ -29,7 +34,10 @@ int main(int argc, char** argv) {
 		}
 
 	}while(flag == false);
+	cout<<endl<<endl;
+	cout<<ope.generateInformatdate();
 	ope.generateDate(ope.enterPaymentLimit());
+
 
 	
 	return 0;
