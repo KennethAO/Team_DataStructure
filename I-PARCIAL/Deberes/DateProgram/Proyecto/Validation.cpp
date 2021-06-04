@@ -159,6 +159,29 @@ static bool validateNumber(int number){
 
 }
 
+////////////////////////////////////////////////////////////////////////
+// Name:       static::verifyDayInMonth()
+// Purpose:    Implementation of  string::verifyDayInMonth()
+// Parameters:
+// - month, year
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+static int verifyDayInMonth(int month,int year){
+    int day = 31;
+    if(month == 4 ||month == 6 ||month == 9 || month == 11){
+        day = 30;
+    }else if (month == 2){
+        if(verifyLeapYear(year)){
+            day = 29;
+        }else{
+            day = 28;
+        }
+    }
+
+    return day;
+}
+
 
 
 
