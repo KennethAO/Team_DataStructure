@@ -1,14 +1,14 @@
 /***********************************************************************
  * Module:  Operacion.h
  * Author:  Equipo
- * Modified: miércoles, 2 de junio de 2021 15:46:42
+ * Modified: miï¿½rcoles, 2 de junio de 2021 15:46:42
  * Purpose: Declaration of the class Operacion
  ***********************************************************************/
 
 #if !defined(__Matriz_Operacion_h)
 #define __Matriz_Operacion_h
 
-#include "Matriz.h"
+#include "Matriz.cpp"
 
 class Operacion
 {

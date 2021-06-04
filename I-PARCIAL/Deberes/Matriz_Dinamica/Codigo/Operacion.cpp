@@ -121,7 +121,7 @@ void Operacion::generar()
 	int i, j;
 	for (i = 0; i < matriz1.getFila_(); i++)
 		for (j = 0; j < matriz1.getColumna_(); j++)//10-0
-			*(*(matriz1.getMatriz_() + i) + j) = rand() % (3-1);
+			*(*(matriz1.getMatriz_() + i) + j) = rand() % (10-0);
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -149,25 +149,29 @@ void Operacion::encerar(Matriz _matriz)
 
 void Operacion::procesar(int exponente)
 {	
-	int num = 1;
 	if(matriz1.getFila_()==matriz1.getColumna_()){
-		while(exponente!=num){
-			for(int i =0;i<matriz1.getFila_();i++){
-				for(int j=0;j<matriz1.getColumna_();j++){
-					for(int k=0;k<matriz1.getFila_();k++){
-						if(num==1){
-							*(*(matrizR.getMatriz_()+i)+j)=*(*(matrizR.getMatriz_()+i)+j)+(*(*(matriz1.getMatriz_()+i)+k))*(*(*(matriz1.getMatriz_()+k)+j));
-						}
-						else
-						{
-							*(*(matrizR.getMatriz_()+i)+j)=*(*(matrizAux.getMatriz_()+i)+j)+(*(*(matriz1.getMatriz_()+i)+k))*(*(*(matrizR.getMatriz_()+k)+j));
-						}
-					}
-				}
+		for(int i=0;i<matriz1.getFila_();i++){
+			for(int j=0;j<matriz1.getColumna_();j++){
+				*(*(matrizAux.getMatriz_()+i)+j)=*(*(matriz1.getMatriz_()+i)+j);
 			}
-			
-			num++;
 		}
+		
+		for (int z = 0; z < exponente - 1; z++) {
+            for (int i = 0; i < matriz1.getFila_(); i++) {
+					for (int j = 0; j < matriz1.getColumna_(); j++) {
+                        *(*(matrizR.getMatriz_()+i)+j)=0;
+                        for (int k = 0; k < matriz1.getFila_(); k++) {
+                            *(*(matrizR.getMatriz_()+i)+j) += ((*(*(matriz1.getMatriz_()+i)+k)) * (*(*(matrizAux.getMatriz_()+k)+j)));
+                        }
+                    }
+                }
+                for (int a = 0; a < matriz1.getFila_(); a++) {
+                    for (int b = 0; b < matriz1.getFila_(); b++) {
+                        *(*(matrizAux.getMatriz_()+a)+b) = *(*(matrizR.getMatriz_()+a)+b);
+                    }
+                }
+
+            }
 }
 else{
 	cout<<"No se puede elevar la matriz porque su numero de filas y columnas no es el mismo"<<endl; 

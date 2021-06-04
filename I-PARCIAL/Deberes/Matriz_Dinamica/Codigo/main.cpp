@@ -1,13 +1,13 @@
 #include<iostream>
 #include<stdlib.h>
-#include"Operacion.h"
+#include"Operacion.cpp"
 
 using namespace std;
 
 int main(){
 	
 	int **mat;
-	Matriz matriz1(4,4);
+	Matriz matriz1(2,2);
 	
 	Operacion operacion(matriz1);
 	operacion.segmentar();
