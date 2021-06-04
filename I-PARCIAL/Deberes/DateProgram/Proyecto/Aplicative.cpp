@@ -38,7 +38,5 @@ int main(int argc, char** argv) {
 	cout<<ope.generateInformatdate();
 	ope.generateDate(ope.enterPaymentLimit());
 
-
-	
 	return 0;
 }
