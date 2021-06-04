@@ -1,8 +1,16 @@
 /***********************************************************************
+ * Universidad de las fuerzas armadas ESPE
+ * Nrc:     3685
  * Module:  Operacion.cpp
- * Author:  Equipo
+ * Author:  Andrade Kenneth
+ * Author:  Buse Rafael 
+ * Author:  Calvopiña David
+ * Author:  Hidrobo Nicolas
+ * Autor:   Patiño Bryan
+ * Author:  Tiamba Henry
+ * Version:  01
  * Modified: miércoles, 2 de junio de 2021 15:46:42
- * Purpose: Implementation of the class Operacion
+ * Purpose: Declaration of prototypes of the class Operacion.cpp
  ***********************************************************************/
 
 #include "Operacion.h"
@@ -43,22 +51,6 @@ void Operacion::setMatriz1(Matriz newMatriz1)
 // Return:     Matriz
 ////////////////////////////////////////////////////////////////////////
 
-
-////////////////////////////////////////////////////////////////////////
-// Name:       Operacion::setMatriz2(Matriz newMatriz2)
-// Purpose:    Implementation of Operacion::setMatriz2()
-// Parameters:
-// - newMatriz2
-// Return:     void
-////////////////////////////////////////////////////////////////////////
-
-
-////////////////////////////////////////////////////////////////////////
-// Name:       Operacion::getMatrizR()
-// Purpose:    Implementation of Operacion::getMatrizR()
-// Return:     Matriz
-////////////////////////////////////////////////////////////////////////
-
 Matriz Operacion::getMatrizR(void)
 {
    return matrizR;
@@ -78,6 +70,26 @@ void Operacion::setMatrizR(Matriz newMatrizR)
 }
 
 ////////////////////////////////////////////////////////////////////////
+// Name:       Operacion::~Operacion()
+// Purpose:    Implementation of Operacion::setMatrizAux()
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Operacion::setMatrizAux(Matriz newMatrizAux){
+	matrizAux=newMatrizAux;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Operacion::getMatrizAux()
+// Purpose:    Implementation of Operacion::getMatrizAux()
+// Return:     Matriz
+////////////////////////////////////////////////////////////////////////
+
+Matriz Operacion::getMatrizAux(void){
+	return matrizAux; 
+}
+
+////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::Operacion(Matriz matriz1, Matriz matriz2, Matriz matriz3)
 // Purpose:    Implementation of Operacion::Operacion()
 // Parameters:
@@ -86,27 +98,11 @@ void Operacion::setMatrizR(Matriz newMatrizR)
 // - matriz3
 // Return:     
 ////////////////////////////////////////////////////////////////////////
-void Operacion::setMatrizAux(Matriz newMatrizAux){
-	matrizAux=newMatrizAux;
-}
-Matriz Operacion::getMatrizAux(void){
-	return matrizAux; 
-}
+
 Operacion::Operacion(Matriz matriz1)
 {
    this->matriz1=matriz1;
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       Operacion::~Operacion()
-// Purpose:    Implementation of Operacion::~Operacion()
-// Return:     
-////////////////////////////////////////////////////////////////////////
-
-/*Operacion::~Operacion()
-{
-   // TODO : implement
-}*/
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Operacion::generar()
@@ -120,7 +116,7 @@ void Operacion::generar()
 	//Rand para matriz 1
 	int i, j;
 	for (i = 0; i < matriz1.getFila_(); i++)
-		for (j = 0; j < matriz1.getColumna_(); j++)//10-0
+		for (j = 0; j < matriz1.getColumna_(); j++)
 			*(*(matriz1.getMatriz_() + i) + j) = rand() % (10-0);
 }
 
@@ -185,15 +181,16 @@ else{
 
 void Operacion::imprimir_(void)
 {
-	cout<<"Matriz 1"<<endl<<endl;
+	cout<<endl<<endl;
+	cout<<"Matriz "<<endl<<endl;
    for(int i =0;i<matriz1.getFila_();i++){
 			for(int j=0;j<matriz1.getColumna_();j++){
 				cout<<"  "<<*(*(matriz1.getMatriz_()+i)+j);
 			}
 			cout<<endl; 
 		}	
-	
-	cout<<"Matriz Potenciacion"<<endl<<endl;
+	cout<<endl<<endl;
+	cout<<"Matriz elevada"<<endl<<endl;
    for(int i =0;i<matrizR.getFila_();i++){
 			for(int j=0;j<matrizR.getColumna_();j++){
 				cout<<"  "<<*(*(matrizR.getMatriz_()+i)+j);
@@ -228,7 +225,6 @@ void Operacion::segmentar()
 			*(matrizRes+j)=(int *)malloc(matrizR.getColumna_()*sizeof(int));
 		matrizR.setMatriz_(matrizRes);
 		encerar(matrizR);
-		
 		
 		int **matAux;
 		matrizAux.setFila_(matriz1.getFila_());

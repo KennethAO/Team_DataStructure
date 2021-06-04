@@ -1,8 +1,16 @@
 /***********************************************************************
- * Module:  Matriz.cpp
- * Author:  Equipo
+ * Universidad de las fuerzas armadas ESPE
+ * Nrc:     3685
+ * Module:  main.cpp
+ * Author:  Andrade Kenneth
+ * Author:  Buse Rafael 
+ * Author:  Calvopiña David
+ * Author:  Hidrobo Nicolas
+ * Autor:   Patiño Bryan
+ * Author:  Tiamba Henry
+ * Version:  01
  * Modified: miércoles, 2 de junio de 2021 15:46:42
- * Purpose: Implementation of the class Matriz
+ * Purpose: Declaration of the prototypes of the fuction Matriz
  ***********************************************************************/
 
 #include "Matriz.h"
@@ -56,6 +64,30 @@ void Matriz::setColumna_(int newColumna_)
 }
 
 ////////////////////////////////////////////////////////////////////////
+// Name:       Matriz::getMatriz_(int newColumna_)
+// Purpose:    Implementation of Matriz::getMatriz()
+// Parameters:
+// -
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int **Matriz::getMatriz_(void){
+	return matriz;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Matriz::setMatriz_(int newColumna_)
+// Purpose:    Implementation of Matriz::setMatriz()
+// Parameters:
+// - 
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+void Matriz::setMatriz_(int **newMatriz_){
+	matriz = newMatriz_;
+}
+
+////////////////////////////////////////////////////////////////////////
 // Name:       Matriz::Matriz(int _fila, int _columna)
 // Purpose:    Implementation of Matriz::Matriz()
 // Parameters:
@@ -64,26 +96,11 @@ void Matriz::setColumna_(int newColumna_)
 // Return:     
 ////////////////////////////////////////////////////////////////////////
 
-int **Matriz::getMatriz_(void){
-	return matriz;
-}
-void Matriz::setMatriz_(int **newMatriz_){
-	matriz = newMatriz_;
-}
-
 Matriz::Matriz(int _fila, int _columna)
 {
    fila_ = _fila;
    columna_ = _columna; 
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       Matriz::~Matriz()
-// Purpose:    Implementation of Matriz::~Matriz()
-// Return:     
-////////////////////////////////////////////////////////////////////////
 
-/*Matriz::~Matriz()
-{
-   // TODO : implement
-}*/
+
