@@ -4,12 +4,12 @@
  * Module:  Operacion.h
  * Author:  Andrade Kenneth
  * Author:  Buse Rafael 
- * Author:  Calvopiña David
+ * Author:  Calvopiï¿½a David
  * Author:  Hidrobo Nicolas
- * Autor:   Patiño Bryan
+ * Autor:   Patiï¿½o Bryan
  * Author:  Tiamba Henry
  * Version:  01
- * Modified: miércoles, 2 de junio de 2021 15:46:42
+ * Modified: miï¿½rcoles, 2 de junio de 2021 15:46:42
  * Purpose: Declaration of the class Operacion.h
  ***********************************************************************/
 
@@ -42,5 +42,6 @@ private:
    Matriz matrizAux;
 
 };
-
+ 
+ 
 #endif
