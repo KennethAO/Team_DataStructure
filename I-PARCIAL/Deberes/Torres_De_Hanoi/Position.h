@@ -29,7 +29,12 @@ class Position{
 	   int y2;
 	   
 	public:
-	   
+	   Position(int _x1, int _y1, int _x2, int _y2);
+	   Position();
+	   ~Position();
+	   int getY2();
+	   void setY2(int newY2);
+	   int getX1();
 	   void setX1(int newX1);
 	   int getY1();
 	   void setY1(int newY1);
@@ -43,3 +48,4 @@ class Position{
 };
 
 #endif
+
