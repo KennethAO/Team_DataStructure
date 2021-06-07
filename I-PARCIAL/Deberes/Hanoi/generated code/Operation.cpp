@@ -22,36 +22,14 @@
 
 using namespace std;
 
-////////////////////////////////////////////////////////////////////////
-// Name:       Operation::Operation()
-// Purpose:    Implementation of Operation::Operation()
-// Parameters:
-// Return:     
-////////////////////////////////////////////////////////////////////////
-
 Operation::Operation(){
 	
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       Operation::Operation()
-// Purpose:    Implementation of Operation::Operation()
-// Parameters:
-// numerDisk
-// Return:     
-////////////////////////////////////////////////////////////////////////
 
 Operation::Operation(int numerDisk){
 	hanoi = Hanoi(numerDisk);
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       Operation::graphBoard()
-// Purpose:    Implementation of Operation::graphBoard()
-// Parameters:
-// numerDisk
-// Return:     void
-////////////////////////////////////////////////////////////////////////
 
 void Operation::graphBoard(int numberDisk){
 
@@ -95,31 +73,12 @@ void Operation::graphBoard(int numberDisk){
 
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       Operation::graphDisk()
-// Purpose:    Implementation of Operation::graphDisk()
-// Parameters:
-// numerDisk
-// Return:     void
-////////////////////////////////////////////////////////////////////////
-
 
 void Operation::graphDisk(Disk disk){
 	
 	setcolor(disk.getColor());
 	rectangle(disk.getPosition().getX1(),disk.getPosition().getY1(),disk.getPosition().getX2(),disk.getPosition().getY2());
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       Operation::playHatoi()
-// Purpose:    Implementation of Operation::playHatoi()
-// Parameters:
-// disk
-// t1
-// t2
-// t3
-// Return:     void
-////////////////////////////////////////////////////////////////////////
 
 void Operation::playHatoi(int disk,int t1,int t2,int t3){
 	if(disk == 1){
@@ -131,15 +90,6 @@ void Operation::playHatoi(int disk,int t1,int t2,int t3){
 		playHatoi(disk-1,t2,t1,t3);
 	}
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       Operation::moveDisk()
-// Purpose:    Implementation of Operation::moveDisk()
-// Parameters:
-// ti
-// tf
-// Return:     void
-////////////////////////////////////////////////////////////////////////
 
 void Operation::moveDisk(int ti,int tf){
 		int n = (hanoi.getTowers()+0)->getDiskNumber();
