@@ -1,3 +1,11 @@
+
+/*
+ *  Universidad de las fuerzas Armadas Espe
+ *    Grupo N1
+ * Autores: Andrade, Buse, Calvopiña, Tiamba, Patiño, Hid
+ *
+ *  (c) Pau FernÃ¡ndez, licencia MIT: http://es.wikipedia.org/wiki/MIT_License
+ */
 #include <iostream>
 #include "miniwin.h"
 using namespace std;

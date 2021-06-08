@@ -1,10 +1,11 @@
 
 /*
- *  MiniWin: Un mini-conjunto de funciones para abrir una ventana, pintar en
- *    ella y detectar la presiÃ³n de algunas teclas. BÃ¡sicamente para hacer
- *    juegos sencillos.
+ *  Universidad de las fuerzas Armadas Espe
+ *    Grupo N1
+ * Autores: Andrade, Buse, Calvopiña, Tiamba, Patiño, Hidrobo
+ * Version 0.1
  *
- *  (c) Pau FernÃ¡ndez, licencia MIT: http://es.wikipedia.org/wiki/MIT_License
+ *  
  */
 
 // VERSION: 0.2.2
@@ -114,18 +115,18 @@ int WINAPI WinMain (HINSTANCE hThisInstance,
     frame_real(iWidth, iHeight, w, h);
 
     hWnd = CreateWindowEx (
-      0,                   /* Extended possibilites for variation */
-      szClassName,         /* Classname */
-      "MiniWin",           /* Title Text */
-      WS_OVERLAPPEDWINDOW, /* default window */
-      CW_USEDEFAULT,       /* Windows decides the position */
-      CW_USEDEFAULT,       /* where the window ends up on the screen */
-      w,                   /* The programs width */
-      h,                   /* and height in pixels */
-      HWND_DESKTOP,        /* The window is a child-window to desktop */
-      NULL,                /* No menu */
-      hThisInstance,       /* Program Instance handler */
-      NULL                 /* No Window Creation data */
+      0,                  
+      szClassName,         
+      "MiniWin",           
+      WS_OVERLAPPEDWINDOW, 
+      CW_USEDEFAULT,       
+      CW_USEDEFAULT,       
+      w,                   
+      h,                   
+      HWND_DESKTOP,        
+      NULL,               
+      hThisInstance,       
+      NULL                 
     );
 
     hBitmap = NULL;
@@ -287,11 +288,6 @@ LRESULT CALLBACK WindowProcedure (HWND hWnd,
     return 0;
 }
 
-////////////////////////////////////////////////////////////////////////////////
-//
-//   Funciones del API
-//
-////////////////////////////////////////////////////////////////////////////////
 
 COLORREF _color = RGB(255, 255, 255);
 
@@ -500,11 +496,8 @@ void vcierra() {
 
 } // namespace miniwin
 
-///////////////////////////////////////////////////////////////////////////////////////
 
 #elif defined(__linux)
-
-// Linux //////////////////////////////////////////////////////////////////////////////
 
 
 #include <cstdio>

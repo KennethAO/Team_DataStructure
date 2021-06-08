@@ -1,10 +1,11 @@
 
 /*
- *  MiniWin: Un mini-conjunto de funciones para abrir una ventana, pintar en
- *    ella y detectar la presiÃ³n de algunas teclas. BÃ¡sicamente para hacer
- *    juegos sencillos.
+ *  Universidad de las fuerzas Armadas Espe
+ *    Grupo N1
+ * Autores: Andrade, Buse, Calvopiña, Tiamba, Patiño, Hidrobo
+ * Version 0.1
  *
- *  (c) Pau FernÃ¡ndez, licencia MIT: http://es.wikipedia.org/wiki/MIT_License
+ *  
  */
 
 // VERSION: 0.2.2
