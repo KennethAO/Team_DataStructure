@@ -1,3 +1,18 @@
+/***********************************************************************
+ * Universidad de las fuerzas armadas ESPE
+ * Nrc:     3685
+ * Module:  Aplicativo.cpp
+ * Author:  Andrade Kenneth
+ * Author:  Buse Rafael 
+ * Author:  Calvopiña David
+ * Author:  Hidrobo Nicolas
+ * Autor:   Patiño Bryan
+ * Author:  Tiamba Henry
+ * Version:  01
+ * Modified: Wednesday, June 9, 2021 3:10:25 PM
+ * Purpose: Implementation of the main
+ ***********************************************************************/
+ 
 #include <iostream>
 #include "Menu.h"
 #include "Operacion.h"
