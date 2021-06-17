@@ -1,7 +1,15 @@
 /***********************************************************************
+ * Universidad de las fuerzas armadas ESPE
+ * Nrc:     3685
  * Module:  Lista.cpp
- * Author:  Rafa
- * Modified: Wednesday, June 9, 2021 3:08:43 PM
+ * Author:  Andrade Kenneth
+ * Author:  Buse Rafael 
+ * Author:  Calvopiña David
+ * Author:  Hidrobo Nicolas
+ * Autor:   Patiño Bryan
+ * Author:  Tiamba Henry
+ * Version:  01
+ * Modified: Wednesday, June 9, 2021 3:10:25 PM
  * Purpose: Implementation of the class Lista
  ***********************************************************************/
  
