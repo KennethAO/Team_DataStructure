@@ -30,7 +30,7 @@ template<typename T>
 void menu(List<T>* _list) {
     Input _input;
     char _answer;
-    int i;
+    char i;
 
     switch (option()) {
     case 1:
