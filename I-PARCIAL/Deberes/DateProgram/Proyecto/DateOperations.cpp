@@ -149,17 +149,22 @@ void DateOperations::generateDate(int numbermonth){
     day = date.getDay();
     month = date.getMonth();
     year = date.getYear();
+    int added;
     for(int j=0;j<numbermonth;j++){
-        for(int i=0;i<31;i++){
-            day++;
-            if(day > verifyDayInMonth(month,year)){
+    	added = 30;
+        for(int i=0;i<added;i++){
+        	if(month == 2 && (i + 1) >  verifyDayInMonth(month,year)){
+        		added = 30 - (30-verifyDayInMonth(month,year));
+			}if((day+1) > verifyDayInMonth(month,year)){
                 day = 1;
                 month++;
                 if(month > 12){
                     month = 1;
                     year++;
                 }
-            }
+            }else{
+            	day++;
+			}
         }
         int a = zeller(day,month,year);
         if(a == 0){
