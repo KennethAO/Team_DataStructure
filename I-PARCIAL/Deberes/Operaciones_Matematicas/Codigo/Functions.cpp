@@ -160,13 +160,13 @@ long double Functions::calculateCotan(long double angle){
  * @param potencia 
  * @return long double 
  */
-long double Functions::powerNumber(long double numero, long double potencia){
+long double Functions::powerNumber(long double num, long double power){
    long double res = 1;
-   if(potencia==0){
+   if(power==0){
    	return res;
    }
-   for(int i=0;i<potencia;i++){
-   	res = res*numero;
+   for(int i=0;i<power;i++){
+   	res = res*num;
    }
    return res;
 }
