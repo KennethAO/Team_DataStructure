@@ -23,6 +23,7 @@ class Sudoku{
 	   void setMatrix(int **newMatrix);
 	   bool play(int row, int column, int number);
 	   void print(void);
+	   void encerar();
 	   bool validateNumber(int number);
 };
 

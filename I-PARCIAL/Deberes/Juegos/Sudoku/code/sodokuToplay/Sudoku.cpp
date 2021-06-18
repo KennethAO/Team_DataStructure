@@ -47,15 +47,16 @@ void Sudoku::setMatrix(int **newMatrix){
 }
 
 bool Sudoku::play(int row, int column, int number){
+	int aux = *(*(matrix+row)+column);
 	if(number == 0){
-		if( *(*(matrix+row)+column) != 0 ){
+		if(aux != 0){
 			remaining++;
 		}
-		*(*(matrix+row)+column) = 0;
-		return true;	
+		*(*(matrix+row)+column);
+		return true;
 	}
-	
-	if(*(*(matrix+row)+column) != 0){
+	if(aux != 0){
+		cout<<"aux: "<<aux<<endl;
 		return false;
 	}
 	
@@ -70,8 +71,8 @@ bool Sudoku::play(int row, int column, int number){
 	int quadrantRow = row/3;
 	int quadrantColumn = column/3;
 	
-	for(int i = quadrantRow;i < quadrantRow;i++){
-		for(int j = quadrantColumn;j < quadrantColumn;j++){
+	for(int i = quadrantRow;i < quadrantRow + 3;i++){
+		for(int j = quadrantColumn;j < quadrantColumn + 3;j++){
 			if(number == *(*(matrix+i)+j)){
 				return false;
 			}
@@ -124,5 +125,15 @@ bool Sudoku::validateNumber(int number){
 		return true;
 	}else{
 		return false;
+	}
+}
+
+void Sudoku::encerar(){
+	for(int i = 0;i < 9;i++){
+		for(int j = 0;j < 9;j++){
+			*(*(matrix+i)+j) = -1;
+			cout<<"\t"<< *(*(matrix+i)+j);
+		}
+		cout<<"\n";
 	}
 }
