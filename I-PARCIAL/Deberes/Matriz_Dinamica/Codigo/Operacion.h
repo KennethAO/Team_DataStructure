@@ -1,20 +1,3 @@
-/***********************************************************************
- * Universidad de las fuerzas armadas ESPE
- * Nrc:     3685
- * Module:  Operacion.h
- * Author:  Andrade Kenneth
- * Author:  Buse Rafael 
- * Author:  Calvopi�a David
- * Author:  Hidrobo Nicolas
- * Autor:   Pati�o Bryan
- * Author:  Tiamba Henry
- * Version:  01
- * Modified: mi�rcoles, 2 de junio de 2021 15:46:42
- * Purpose: Declaration of the class Operacion.h
- ***********************************************************************/
-
-#if !defined(__Matriz_Operacion_h)
-#define __Matriz_Operacion_h
 
 #include "Matriz.h"
 
@@ -28,12 +11,12 @@ public:
    Matriz getMatrizAux(void);
    void setMatrizAux(Matriz newMatrizAux);
    Operacion(Matriz matriz1);
-   void segmentar(void);
    Operacion()=default;
-   void generar(void);
-   void encerar(Matriz _matriz);
-   void procesar(int exponente);
+   void generar(void);   
    void imprimir_(void);
+   void guardar();
+   void ocurencias();
+   void imprimirocurrencia();
 protected:
 	
 private:
@@ -44,4 +27,4 @@ private:
 };
  
  
-#endif
+

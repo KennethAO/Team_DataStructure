@@ -135,8 +135,8 @@ Persona::~Persona()
 }
 
 void Persona::mostrarDatos(){
-	
-	cout<<"Nombre: "<<nombre<<endl;
+	cout<<"Nombre: "<<Persona::getNombre();
+	//cout<<"Nombre: "<<nombre<<endl;
 	cout<<"Apellido: "<<apellido<<endl;
 	cout<<"edad: "<<edad<<endl;
 	cout<<"E-mail: "<<email<<endl;
