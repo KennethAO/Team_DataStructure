@@ -1,17 +1,17 @@
-# Project: Proyecto 1
+# Project: Torres_de_hanoi
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = Aplicative.o Date.o DateOperations.o Validation.o
-LINKOBJ  = Aplicative.o Date.o DateOperations.o Validation.o
-LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+OBJ      = main.o miniwin.o
+LINKOBJ  = main.o miniwin.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -mwindows -m32
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = "Proyecto 1.exe"
-CXXFLAGS = $(CXXINCS) -std=gnu++11
-CFLAGS   = $(INCS) -std=gnu++11
+BIN      = Torres_de_hanoi.exe
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
 RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
@@ -24,14 +24,8 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-Aplicative.o: Aplicative.cpp
-	$(CPP) -c Aplicative.cpp -o Aplicative.o $(CXXFLAGS)
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
 
-Date.o: Date.cpp
-	$(CPP) -c Date.cpp -o Date.o $(CXXFLAGS)
-
-DateOperations.o: DateOperations.cpp
-	$(CPP) -c DateOperations.cpp -o DateOperations.o $(CXXFLAGS)
-
-Validation.o: Validation.cpp
-	$(CPP) -c Validation.cpp -o Validation.o $(CXXFLAGS)
+miniwin.o: miniwin.cpp
+	$(CPP) -c miniwin.cpp -o miniwin.o $(CXXFLAGS)
