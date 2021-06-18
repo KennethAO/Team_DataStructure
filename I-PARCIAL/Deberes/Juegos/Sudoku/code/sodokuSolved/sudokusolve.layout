@@ -1,6 +1,11 @@
 [Editors]
+<<<<<<< HEAD
 Order=0,1
 Focused=-1
+=======
+Order=1,0,2
+Focused=1
+>>>>>>> e3b564c90e556cdc536f92338f2b3c5e65745a62
 [Editor_0]
 CursorCol=1
 CursorRow=1
@@ -11,3 +16,11 @@ CursorCol=1
 CursorRow=1
 TopLine=1
 LeftChar=1
+<<<<<<< HEAD
+=======
+[Editor_2]
+CursorCol=26
+CursorRow=8
+TopLine=1
+LeftChar=1
+>>>>>>> e3b564c90e556cdc536f92338f2b3c5e65745a62
