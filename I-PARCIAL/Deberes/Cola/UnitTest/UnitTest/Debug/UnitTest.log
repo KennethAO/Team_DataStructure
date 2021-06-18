@@ -1,0 +1,6 @@
+﻿  Source.cpp
+C:\Users\Equipo\Desktop\COLA\UnitTest\UnitTest\Source.cpp(126,1): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  UnitTest.cpp
+C:\Users\Equipo\Desktop\COLA\UnitTest\UnitTest\Validacion.cpp(72,14): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Users\Equipo\Desktop\COLA\UnitTest\UnitTest\Validacion.cpp(121,20): warning C4018: '<': no coinciden signed/unsigned
+  Generando código...

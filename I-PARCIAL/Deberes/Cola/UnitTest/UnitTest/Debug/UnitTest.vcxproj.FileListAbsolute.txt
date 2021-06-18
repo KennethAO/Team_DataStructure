@@ -1,0 +1,2 @@
+C:\Users\Equipo\Desktop\COLA\UnitTest\UnitTest\Debug\UnitTest.dll
+C:\Users\Equipo\Desktop\COLA\UnitTest\UnitTest\Debug\UnitTest.pdb
