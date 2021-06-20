@@ -4,5 +4,9 @@ Focused=0
 [Editor_0]
 CursorCol=1
 CursorRow=1
+<<<<<<< HEAD
+TopLine=1
+=======
 TopLine=22
+>>>>>>> eb2b938c9cd036c5279145e7ce65a49c21be20cb
 LeftChar=1
