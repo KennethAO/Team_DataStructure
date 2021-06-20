@@ -4,17 +4,18 @@
  * Module:  Date.h
  * Author:  Andrade Kenneth
  * Author:  Buse Rafael 
- * Author:  Calvopiña David
+ * Author:  Calvopiï¿½a David
  * Author:  Hidrobo Nicolas
- * Autor:   Patiño Bryan
+ * Autor:   Patiï¿½o Bryan
  * Author:  Tiamba Henry
  * Version:  01
  * Modified: Tuesday, June 1, 2021 12:53:55 PM
  * Purpose: Prototyps of the class Date.h
  ***********************************************************************/
 #pragma once
-#if !defined(__Class_Diagram_1_Date_h)
-#define __Class_Diagram_1_Date_h
+#include <iostream>
+
+using namespace std;
 
 class Date{
    protected:
@@ -32,6 +33,6 @@ class Date{
       void setMonth(int newMonth);
       int getYear(void);
       void setYear(int newYear);
+      string datosFecha();
 };
 
-#endif

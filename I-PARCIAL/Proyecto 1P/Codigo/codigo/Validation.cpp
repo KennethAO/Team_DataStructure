@@ -4,23 +4,15 @@
  * Module:  validation.cpp
  * Author:  Andrade Kenneth
  * Author:  Buse Rafael 
- * Author:  Calvopiña David
+ * Author:  Calvopiï¿½a David
  * Author:  Hidrobo Nicolas
- * Autor:   Patiño Bryan
+ * Autor:   Patiï¿½o Bryan
  * Author:  Tiamba Henry
  * Version:  01
  * Modified: Tuesday, June 1, 2021 12:53:55 PM
  * Purpose: Prototyps of the class Validation.cpp
  ***********************************************************************/
- 
- 
-////////////////////////////////////////////////////////////////////////
-// Name:       static::verifyLeapYear()
-// Purpose:    Implementation of  string::verifyLeapYear(int year)
-// Parameters:
-// - _year
-// Return:     bool
-////////////////////////////////////////////////////////////////////////
+
 #include "Date.h"
 
 static bool verifyLeapYear(int year){
@@ -33,15 +25,7 @@ static bool verifyLeapYear(int year){
    
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       static::verifyDayInMonth()
-// Purpose:    Implementation of  string::c(int month,int year)
-// Parameters:
-// - _year,_month
-// Return:     int
-////////////////////////////////////////////////////////////////////////
-
-static int c(int month,int year){
+static int verifyDayInMonth(int month,int year){
     int day = 31;
     if(month == 4 ||month == 6 ||month == 9 || month == 11){
         day = 30;
@@ -56,17 +40,9 @@ static int c(int month,int year){
     return day;
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       static::validateDate()
-// Purpose:    Implementation of  string::validateDate(int day,int month,int year)
-// Parameters:
-// - _day,_year,_month
-// Return:     bool
-////////////////////////////////////////////////////////////////////////
-
 static bool validateDate(int day, int month, int year){
-    bool flag;
     
+    bool flag;
     if(year>=1900 && year<=2100){
         if(verifyLeapYear(year)){
             if(month>=1 && month<=12){
@@ -126,14 +102,6 @@ static bool validateDate(int day, int month, int year){
     return flag;
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       static::zeller()
-// Purpose:    Implementation of  string::zeller(int day,int month,int year)
-// Parameters:
-// - _day,_year,_month
-// Return:     int
-////////////////////////////////////////////////////////////////////////
-
 static int zeller(int day,int month,int year){
     int a = (14-month)/12;
 	int y = year - a;
@@ -141,14 +109,6 @@ static int zeller(int day,int month,int year){
 	int d = (day + y + y/4 - y/100 + y/400 + (31*m)/12)%7;
     return d;
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       static::validateNumber()
-// Purpose:    Implementation of  string::validateNumber(int number)
-// Parameters:
-// - _number
-// Return:     bool
-////////////////////////////////////////////////////////////////////////
 
 static bool validateNumber(int number){
     if(number > 0){
@@ -160,43 +120,17 @@ static bool validateNumber(int number){
 
 }
 
-//static Date checkWorkDate(Date date){
-//	int day = zeller(date.getDay(), date.getMonth(), date.getDay());
-//	
-//	if(day == 0){
-//		date.setDay(date.getDay()+1);
-//	}else if(day == 6){
-//		
-//		date.setDay(date.getDay()+2);
-//	}
-//	
-//	return date;
-//}
-
-
-////////////////////////////////////////////////////////////////////////
-// Name:       static::verifyDayInMonth()
-// Purpose:    Implementation of  string::verifyDayInMonth()
-// Parameters:
-// - month, year
-// Return:     int
-////////////////////////////////////////////////////////////////////////
-
-static int verifyDayInMonth(int month,int year){
-    int day = 31;
-    if(month == 4 ||month == 6 ||month == 9 || month == 11){
-        day = 30;
-    }else if (month == 2){
-        if(verifyLeapYear(year)){
-            day = 29;
-        }else{
-            day = 28;
-        }
-    }
-
-    return day;
+static Date checkWorkDate(Date date){
+	int day = zeller(date.getDay(), date.getMonth(), date.getDay());
+	
+	if(day == 0){
+		date.setDay(date.getDay()+1);
+	}else if(day == 6){
+		
+		date.setDay(date.getDay()+2);
+	}
+	
+	return date;
 }
-
-
 
 

@@ -24,14 +24,6 @@
 
 using namespace std;
 
-////////////////////////////////////////////////////////////////////////
-// Name:       Matriz::DateOperations(int _matriz)
-// Purpose:    Implementation of DateOperations::DateOperations()
-// Parameters:
-// - _date
-// Return:     
-////////////////////////////////////////////////////////////////////////
-
 DateOperations::DateOperations(Date _date){
     this->date = _date;
     days[0]="Domingo";days[1]="Lunes";days[2]="Martes";days[3]="Miercoles";days[4]="Jueves";days[5]="Viernes";days[6]="Sabado";
@@ -39,56 +31,62 @@ DateOperations::DateOperations(Date _date){
     months[6]="Julio";months[7]="Agosto";months[8]="Septiembre";months[9]="Octubre";months[10]="Noviembre";months[11]="Diciembre";
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       DateOperations::ingresar(char *msj)
-// Purpose:    Implementation of DateOperations::ingresar()
-// Parameters:
-// -*msj
-// Return:     int
-////////////////////////////////////////////////////////////////////////
+int DateOperations::ingresar(int dim){
 
-// int DateOperations::ingresar(char *msj){
-//     char dat[8];
-//     int i=0,valor;
-//     char c;
-//     printf("%s",msj);
-//     while((c=getch())!=13){
-//         if(c>='0' && c<='9'){
-//             printf("%c",c);
-//             dat[i++]=c;
-//         }
-//     }
-//     dat[i]='\0';
-//     valor=atoi(dat);
-//     return valor;
-// }
+    char dato[dim];
+	int i,valor;
+    char tecla;
+    i = 0;
+    dato[0] = '\0';
+    do
+    {
 
-////////////////////////////////////////////////////////////////////////
-// Name:       DateOperations::enterData()
-// Purpose:    Implementation of DateOperations::enterData()
-// Parameters:
-// - 
-// Return:     void
-////////////////////////////////////////////////////////////////////////
+        tecla = getch ();
+        if ( i > 0 && tecla == 8 ){
+            cout<<"\b \b";
+            dato[--i] = '\0';
+        }else{
+	        if(i<dim){
+				if ( (tecla >= 48 && tecla <= 57)){
+	                cout<<tecla;
+	                dato[i++] = tecla;
+	            }
+	        }
+		}
+        
+		
+    } while ((tecla != 13 || dato[0] == '\0'));
+    dato[i] = '\0';
 
-// void DateOperations::enterDate(){
-//     int day=0,month=0,year=0;
-//     day=ingresar("\n Ingrese el dia: ");
-//     month=ingresar("\n Ingrese el mes: ");
-//     year=ingresar("\n Ingrese el anio: ");
-//     cout<<endl;
-//     date.setDay(day);
-//     date.setMonth(month);
-//     date.setYear(year);
-// }
+    valor=atoi(dato);
+    return valor;
+}
 
-////////////////////////////////////////////////////////////////////////
-// Name:       DateOperations::checkDate()
-// Purpose:    Implementation of DateOperations::checkDate()
-// Parameters:
-// -*msj
-// Return:     bool
-////////////////////////////////////////////////////////////////////////
+Date DateOperations::enterDate(){
+    bool verificador;
+    Date fecha;
+    int day,month,year;
+    do
+    {
+
+        day=0;month=0;year=0;
+        cout<<"Ingrese la fecha en formato dd/mm/aa: ";
+        day = ingresar(2);
+        cout<<"/";
+        month = ingresar(2);
+        cout<<"/";
+        year = ingresar(4);
+        verificador = validateDate(day,month,year);
+        if(verificador == false){
+            cout<<endl;
+            cout << "\e[A\r\e[0K";
+        }
+    } while (verificador == false);
+
+    fecha.setDay(day);fecha.setMonth(month);fecha.setYear(year);
+
+    return fecha;
+}
 
 bool DateOperations::checkDate(){
     bool flag;
@@ -105,14 +103,6 @@ bool DateOperations::checkDate(){
     }
     return flag;
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       DateOperations::generateInformtdate()
-// Purpose:    Implementation of DateOperations::generateInformatdate()
-// Parameters:
-// -
-// Return:     string
-////////////////////////////////////////////////////////////////////////
 
 string DateOperations::generateInformatdate(){
     int numberDay;
@@ -135,14 +125,6 @@ string DateOperations::generateInformatdate(){
     d += to_string(date.getYear());
     return d;
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       DateOperations::generateDate()
-// Purpose:    Implementation of DateOperations::generateDate()
-// Parameters:
-// - numbermonth
-// Return:     void
-////////////////////////////////////////////////////////////////////////
 
 void DateOperations::generateDate(int numbermonth){
     int day,month,year,dayAux;
@@ -171,14 +153,6 @@ void DateOperations::generateDate(int numbermonth){
 		cout<<generateInformatdate()<<endl;
 	}
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       DateOperations::enterPaymentLimit()
-// Purpose:    Implementation of DateOperations::enterPaymentLimit()
-// Parameters:
-// - 
-// Return:     int
-////////////////////////////////////////////////////////////////////////
 
 int DateOperations::enterPaymentLimit(){
     

@@ -4,9 +4,9 @@
  * Module:  Date.cpp
  * Author:  Andrade Kenneth
  * Author:  Buse Rafael 
- * Author:  Calvopiña David
+ * Author:  Calvopiï¿½a David
  * Author:  Hidrobo Nicolas
- * Autor:   Patiño Bryan
+ * Autor:   Patiï¿½o Bryan
  * Author:  Tiamba Henry
  * Version:  01
  * Modified: Tuesday, June 1, 2021 12:53:55 PM
@@ -102,6 +102,12 @@ int Date::getYear(){
 
 void Date::setYear(int newYear){
    year = newYear;
+}
+
+string Date::datosFecha(){
+   stringstream s;
+   s<<day<<"/"<<month<<"/"<<year;
+   return s.str();
 }
 
 

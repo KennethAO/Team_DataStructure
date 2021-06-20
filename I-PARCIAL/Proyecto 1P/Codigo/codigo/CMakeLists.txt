@@ -11,7 +11,8 @@ add_executable(ProyectoP1 main.cpp
                             Validar.h Validar.cpp
                             Date.h Date.cpp
                             DateOperations.h DateOperations.cpp
-                            Validation.cpp)
+                            Validation.cpp
+                            Menu.h Menu.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

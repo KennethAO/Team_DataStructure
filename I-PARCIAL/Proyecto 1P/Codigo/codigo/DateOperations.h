@@ -28,9 +28,10 @@ class DateOperations{
             string months[12];
     public:
         DateOperations(Date);
+        DateOperations() = default;
         int enterPaymentLimit();
-        int ingresar(string const);
-        void enterDate();
+        int ingresar(int);
+        Date enterDate();
         bool checkDate();
         string generateInformatdate();
         void generateDate(int);

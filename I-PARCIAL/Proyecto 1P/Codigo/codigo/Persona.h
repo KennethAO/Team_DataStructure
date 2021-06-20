@@ -8,6 +8,7 @@
 #if !defined(__Class_Diagram_1_Persona_h)
 #define __Class_Diagram_1_Persona_h
 #include <iostream>
+#include "Date.h"
 using namespace std;
 
 class Persona{
@@ -15,6 +16,7 @@ class Persona{
 	private:
 	   string nombre;
 	   string apellido;
+	   Date nacimiento;
 	   string cedula;
 	   string direccion;
 	   string telefono;
@@ -27,6 +29,8 @@ class Persona{
 	   void setNombre(string newNombre);
 	   string getApellido(void);
 	   void setApellido(string newApellido);
+	   Date getNacimiento();
+	   void setNacimiento(Date newNacimiento);
 	   string getCedula(void);
 	   void setCedula(string newCedula);
 	   string getDireccion(void);

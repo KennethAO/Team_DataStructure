@@ -1,12 +1,28 @@
 #include <iostream>
 #include "OperacionesPersona.h"
+#include "DateOperations.h"
+#include "Menu.h"
 int main(int, char**) {
     
-    Persona persona;
-    OperacionesPersona op;
-    persona = op.insertarDatos();
+    Menu menu;
+    int opc;
 
-    op.generarCorreo(persona);
+    opc = menu.menuPrincipal();
 
-    cout<<"\n\n\t Datos Persona \n"<<persona.datosPersona();
+    switch (opc)
+    {
+    case 1:
+        Persona persona;
+        OperacionesPersona op;
+        persona = op.insertarDatos();
+
+        op.generarCorreo(persona);
+
+        cout<<"\n\n\t Datos Persona \n"<<persona.datosPersona();
+        break;
+
+    }
+    
+    
+
 }
