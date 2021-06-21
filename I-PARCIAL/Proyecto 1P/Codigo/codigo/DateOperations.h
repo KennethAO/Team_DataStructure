@@ -32,7 +32,10 @@ class DateOperations{
         int enterPaymentLimit();
         int ingresar(int);
         Date enterDate();
-        bool checkDate();
-        string generateInformatdate();
-        void generateDate(int);
+        bool checkDate(Date);
+        string generateInformatdate(Date);
+        void generateDate(int,Date);
+        Date validarDiaLaboral(int,int,int);
+        Date validarFeriado(int,int,int);
+        
 };

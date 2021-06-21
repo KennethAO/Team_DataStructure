@@ -88,7 +88,7 @@ Date DateOperations::enterDate(){
     return fecha;
 }
 
-bool DateOperations::checkDate(){
+bool DateOperations::checkDate(Date date){
     bool flag;
     if(validateDate(date.getDay(),date.getMonth(),date.getYear())){
         int day = zeller(date.getDay(),date.getMonth(),date.getYear());
@@ -104,7 +104,7 @@ bool DateOperations::checkDate(){
     return flag;
 }
 
-string DateOperations::generateInformatdate(){
+string DateOperations::generateInformatdate(Date date){
     int numberDay;
     string day,month,year,d = "";
     numberDay = zeller(date.getDay(),date.getMonth(),date.getYear());
@@ -126,7 +126,7 @@ string DateOperations::generateInformatdate(){
     return d;
 }
 
-void DateOperations::generateDate(int numbermonth){
+void DateOperations::generateDate(int numbermonth,Date date){
     int day,month,year,dayAux;
     day = date.getDay();
     dayAux = day;
@@ -140,17 +140,25 @@ void DateOperations::generateDate(int numbermonth){
 		}else{
 			month++;
 		}
-		
 	    if(day > verifyDayInMonth(month,year)){
-	    	dayAux = verifyDayInMonth(month,year);
-		}
+            dayAux = verifyDayInMonth(month,year);
+        }
 		else{
 			dayAux = day;
 		}
-		
-		date.setDay(dayAux);date.setMonth(month);date.setYear(year);
-		
-		cout<<generateInformatdate()<<endl;
+        date = validarFeriado(dayAux,month,year);
+        date = validarDiaLaboral(date.getDay(),date.getMonth(),date.getYear());
+        //24 05 2021 
+        date = validarFeriado(date.getDay(),date.getMonth(),date.getYear());
+        //siempre va a caer lunes algunos feriados 
+
+		//date.setDay(dayAux);date.setMonth(month);date.setYear(year);
+		//cout<<generateInformatdate(date)<<endl;
+        cout<<endl;
+        cout<<date.getDay()<<"/";
+        cout<<date.getMonth()<<"/";
+        cout<<date.getYear();
+        cout<<endl;
 	}
 }
 
@@ -168,7 +176,80 @@ int DateOperations::enterPaymentLimit(){
     return numberMonth;
 }
 
+Date DateOperations::validarDiaLaboral(int day,int month, int year){
+    if(zeller(day,month,year)==0){
+        if(day+1>verifyDayInMonth(month,year)){
+            if(month+1>12){
+                year++;
+                month=1;
+                day=1;
+            }else{
+                month++;
+                day = 1;
+            }
+        }
+        else{
+            day++;
+        }
+    }
+    else if(zeller(day,month,year)==6){
+        if(day+2>verifyDayInMonth(month,year)){
+            if(month+1>12){
+                year++;
+                month=1;
+                day=1;
+            }else{
+                month++;
+                day = 1;
+            }
+        }
+        else{
+            day=day+2;
+        }
+    }
+    Date date1(day,month,year);
+    return date1;
+}
 
 
 
+Date DateOperations::validarFeriado(int day,int month,int year){
+    Date *feriados=new Date[12];
+    Date date2(day,month,year);
+
+    *(feriados+0) = Date(1,1,1);
+    *(feriados+1) = Date(15,2,1);
+    *(feriados+2) = Date(16,2,1);
+    *(feriados+3) = Date(2,4,1);
+    *(feriados+4) = Date(1,5,1);
+    *(feriados+5) = Date(24,5,1);
+    *(feriados+6) = Date(9,8,1);
+    *(feriados+7) = Date(9,9,1);
+    *(feriados+8) = Date(2,11,1);
+    *(feriados+9) = Date(3,11,1);
+    *(feriados+10) = Date(25,12,1);
+    *(feriados+11) = Date(31,12,1);
+
+    for(int i=0;i<11;i++){
+        if((feriados+i)->getDay()==day && (feriados+i)->getMonth()==month){
+            if(day+1>verifyDayInMonth(month,year)){
+                if(month+1>12){
+                    year++;
+                    month=1;
+                    day=1;
+                }else{
+                    month++;
+                    day = 1;
+                }
+            }
+            else{
+                day++;
+            } 
+        date2.setDay(day);
+        date2.setMonth(month);
+        date2.setYear(year);
+        }
+    }
+    return date2; 
+}   
 

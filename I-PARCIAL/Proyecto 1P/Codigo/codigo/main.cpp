@@ -2,9 +2,11 @@
 #include "OperacionesPersona.h"
 #include "DateOperations.h"
 #include "Menu.h"
+#include "Validation.cpp"
+
 int main(int, char**) {
     
-    Menu menu;
+    /*Menu menu;
     int opc;
 
     opc = menu.menuPrincipal();
@@ -20,9 +22,19 @@ int main(int, char**) {
 
         cout<<"\n\n\t Datos Persona \n"<<persona.datosPersona();
         break;
-
+    }*/
+    
+    Date date;
+    DateOperations dateOperations;
+bool flag=false;
+while(flag==false){
+system("cls");
+date = dateOperations.enterDate();
+flag = dateOperations.checkDate(date);
+if(flag==false){
+        cout<<"Fecha mala ponga bien chamadre"<<endl;
     }
-    
-    
-
+}
+int month = dateOperations.enterPaymentLimit();
+dateOperations.generateDate(month,date);
 }
