@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
 				cout<<endl;
 				break;
 			case 2: 
-				digito=validar.validarNum("Ingrese el indice a eliminar");
+				digito=validar.validarNum("Ingrese el indice a eliminar: ");
 				cola.eliminar(digito);
 				cout<<endl;
 				system("pause");
