@@ -1,5 +1,9 @@
 [Editors]
 <<<<<<< HEAD
+Order=
+Focused=-1
+=======
+<<<<<<< HEAD
 Order=0,1
 Focused=-1
 =======
@@ -24,3 +28,4 @@ CursorRow=8
 TopLine=1
 LeftChar=1
 >>>>>>> e3b564c90e556cdc536f92338f2b3c5e65745a62
+>>>>>>> eb2b938c9cd036c5279145e7ce65a49c21be20cb

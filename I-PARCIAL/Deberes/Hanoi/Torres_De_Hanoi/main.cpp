@@ -52,7 +52,7 @@ void mensaje(string msj){
     vredimensiona(200,150);
 	texto(0,0,"BIENVENIDO AL JUEGO");
 	
-	return 0;
+	//return 0;
 	
 }
 	void tablero(){
