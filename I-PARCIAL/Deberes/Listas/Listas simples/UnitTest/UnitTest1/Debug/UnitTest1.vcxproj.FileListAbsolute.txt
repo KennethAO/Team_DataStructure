@@ -1,2 +1,0 @@
-C:\Users\Equipo\Desktop\Operaciones (2)\UnitTest\UnitTest1\Debug\UnitTest1.dll
-C:\Users\Equipo\Desktop\Operaciones (2)\UnitTest\UnitTest1\Debug\UnitTest1.pdb

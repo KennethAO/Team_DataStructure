@@ -1,7 +1,0 @@
-﻿  UnitTestDates.cpp
-C:\Users\Daniel\Documents\DANIEL\Unit Test\UnitTestDates\UnitTestDates\UnitTestDates\DateOperations.h(65,17): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-C:\Users\Daniel\Documents\DANIEL\Unit Test\UnitTestDates\UnitTestDates\UnitTestDates\DateOperations.h(166,23): error C3861: 'verifyDayInMonth': no se encontró el identificador
-C:\Users\Daniel\Documents\DANIEL\Unit Test\UnitTestDates\UnitTestDates\UnitTestDates\UnitTestDates.cpp(37,3): error C2535: 'const Microsoft::VisualStudio::CppUnitTestFramework::MemberMethodInfo *UnitTestDates::UnitTestDates::__GetTestMethodInfo_TestMethod1(void)': función miembro ya definida o declarada
-C:\Users\Daniel\Documents\DANIEL\Unit Test\UnitTestDates\UnitTestDates\UnitTestDates\UnitTestDates.cpp(29): message : vea la declaración de 'UnitTestDates::UnitTestDates::__GetTestMethodInfo_TestMethod1'
-C:\Users\Daniel\Documents\DANIEL\Unit Test\UnitTestDates\UnitTestDates\UnitTestDates\UnitTestDates.cpp(37,3): error C2535: 'void UnitTestDates::UnitTestDates::TestMethod1(void)': función miembro ya definida o declarada
-C:\Users\Daniel\Documents\DANIEL\Unit Test\UnitTestDates\UnitTestDates\UnitTestDates\UnitTestDates.cpp(29): message : vea la declaración de 'UnitTestDates::UnitTestDates::TestMethod1'
