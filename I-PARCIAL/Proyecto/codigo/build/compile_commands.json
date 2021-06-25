@@ -1,0 +1,52 @@
+[
+{
+  "directory": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/build",
+  "command": "C:/ProgramData/chocolatey/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/ProyectoP1.dir/includes_CXX.rsp -g -o CMakeFiles/ProyectoP1.dir/main.cpp.obj -c \"C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/main.cpp\"",
+  "file": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/main.cpp"
+},
+{
+  "directory": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/build",
+  "command": "C:/ProgramData/chocolatey/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/ProyectoP1.dir/includes_CXX.rsp -g -o CMakeFiles/ProyectoP1.dir/OperacionesPersona.cpp.obj -c \"C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/OperacionesPersona.cpp\"",
+  "file": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/OperacionesPersona.cpp"
+},
+{
+  "directory": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/build",
+  "command": "C:/ProgramData/chocolatey/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/ProyectoP1.dir/includes_CXX.rsp -g -o CMakeFiles/ProyectoP1.dir/Persona.cpp.obj -c \"C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Persona.cpp\"",
+  "file": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Persona.cpp"
+},
+{
+  "directory": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/build",
+  "command": "C:/ProgramData/chocolatey/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/ProyectoP1.dir/includes_CXX.rsp -g -o CMakeFiles/ProyectoP1.dir/Date.cpp.obj -c \"C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Date.cpp\"",
+  "file": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Date.cpp"
+},
+{
+  "directory": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/build",
+  "command": "C:/ProgramData/chocolatey/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/ProyectoP1.dir/includes_CXX.rsp -g -o CMakeFiles/ProyectoP1.dir/DateOperations.cpp.obj -c \"C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/DateOperations.cpp\"",
+  "file": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/DateOperations.cpp"
+},
+{
+  "directory": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/build",
+  "command": "C:/ProgramData/chocolatey/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/ProyectoP1.dir/includes_CXX.rsp -g -o CMakeFiles/ProyectoP1.dir/Validar.cpp.obj -c \"C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Validar.cpp\"",
+  "file": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Validar.cpp"
+},
+{
+  "directory": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/build",
+  "command": "C:/ProgramData/chocolatey/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/ProyectoP1.dir/includes_CXX.rsp -g -o CMakeFiles/ProyectoP1.dir/Validation.cpp.obj -c \"C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Validation.cpp\"",
+  "file": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Validation.cpp"
+},
+{
+  "directory": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/build",
+  "command": "C:/ProgramData/chocolatey/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/ProyectoP1.dir/includes_CXX.rsp -g -o CMakeFiles/ProyectoP1.dir/Movimientos.cpp.obj -c \"C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Movimientos.cpp\"",
+  "file": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Movimientos.cpp"
+},
+{
+  "directory": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/build",
+  "command": "C:/ProgramData/chocolatey/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/ProyectoP1.dir/includes_CXX.rsp -g -o CMakeFiles/ProyectoP1.dir/OperacionesAmortizacion.cpp.obj -c \"C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/OperacionesAmortizacion.cpp\"",
+  "file": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/OperacionesAmortizacion.cpp"
+},
+{
+  "directory": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/build",
+  "command": "C:/ProgramData/chocolatey/bin/x86_64-w64-mingw32-g++.exe  @CMakeFiles/ProyectoP1.dir/includes_CXX.rsp -g -o CMakeFiles/ProyectoP1.dir/Libreria/Menu.cpp.obj -c \"C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Libreria/Menu.cpp\"",
+  "file": "C:/Users/Rafa/Desktop/ESPE -NEW/Estructura de datos/Proyecto/respaldo/codigo/Libreria/Menu.cpp"
+}
+]
