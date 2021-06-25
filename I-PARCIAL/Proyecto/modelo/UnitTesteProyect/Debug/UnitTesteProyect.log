@@ -1,0 +1,21 @@
+﻿  Date.cpp
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\Date.cpp(151,1): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  UnitTesteProyect.cpp
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\Validacion.cpp(18,13): error C2267: 'verifyLeapYear': las funciones static con ámbito de bloque no son válidas
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\Validacion.cpp(18,38): error C2601: 'verifyLeapYear': las definiciones de funciones locales no son válidas
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\Date.cpp(112): message : esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\Validacion.cpp(29,12): error C2267: 'verifyDayInMonth': las funciones static con ámbito de bloque no son válidas
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\Validacion.cpp(29,50): error C2601: 'verifyDayInMonth': las definiciones de funciones locales no son válidas
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\Date.cpp(112): message : esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\Validacion.cpp(46,13): error C2267: 'validateDate': las funciones static con ámbito de bloque no son válidas
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\Validacion.cpp(46,56): error C2601: 'validateDate': las definiciones de funciones locales no son válidas
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\Date.cpp(112): message : esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\UnitTesteProyect.cpp(16,1): error C2870: 'UnitTesteProyect': una definición de espacio de nombres debe aparecer en el ámbito del archivo o directamente dentro de otra definición de espacio de nombres
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\UnitTesteProyect.cpp(271,3): error C2535: 'const Microsoft::VisualStudio::CppUnitTestFramework::MemberMethodInfo *UnitTesteProyect::DateOperations::__GetTestMethodInfo_validarDiaLaboral(void)': función miembro ya definida o declarada
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\UnitTesteProyect.cpp(219): message : vea la declaración de 'UnitTesteProyect::DateOperations::__GetTestMethodInfo_validarDiaLaboral'
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\UnitTesteProyect.cpp(271,34): error C2535: 'void UnitTesteProyect::DateOperations::validarDiaLaboral(void)': función miembro ya definida o declarada
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\UnitTesteProyect.cpp(219): message : vea la declaración de 'UnitTesteProyect::DateOperations::validarDiaLaboral'
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\UnitTesteProyect.cpp(16): fatal error C1075: "{": no se encontró ningún token coincidente
+  Validacion.cpp
+C:\Users\ariel\source\repos\UnitTesteProyect\UnitTesteProyect\Validacion.cpp(152,1): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  Generando código...
