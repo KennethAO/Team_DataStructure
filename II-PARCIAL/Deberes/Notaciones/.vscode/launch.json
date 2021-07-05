@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "c:\\Users\\Equipo\\Desktop\\POSTDIJA\\PILA\\09_16062021_stack\\Pilas\\Pilas",
+      "environment": [],
+      "program": "c:\\Users\\Equipo\\Desktop\\POSTDIJA\\PILA\\09_16062021_stack\\Pilas\\Pilas\\build\\Debug\\outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+      "externalConsole": false
+    }
+  ]
+}
