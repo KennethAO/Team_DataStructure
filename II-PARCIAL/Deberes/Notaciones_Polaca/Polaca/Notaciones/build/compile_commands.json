@@ -1,0 +1,17 @@
+[
+{
+  "directory": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Polaca/Notaciones/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Notaciones.dir\\main.cpp.obj -c C:\\Users\\Equipo\\Desktop\\EXTRA_GRUPO\\Polaca\\Notaciones\\main.cpp",
+  "file": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Polaca/Notaciones/main.cpp"
+},
+{
+  "directory": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Polaca/Notaciones/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Notaciones.dir\\Menu.cpp.obj -c C:\\Users\\Equipo\\Desktop\\EXTRA_GRUPO\\Polaca\\Notaciones\\Menu.cpp",
+  "file": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Polaca/Notaciones/Menu.cpp"
+},
+{
+  "directory": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Polaca/Notaciones/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Notaciones.dir\\Notaciones.cpp.obj -c C:\\Users\\Equipo\\Desktop\\EXTRA_GRUPO\\Polaca\\Notaciones\\Notaciones.cpp",
+  "file": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Polaca/Notaciones/Notaciones.cpp"
+}
+]

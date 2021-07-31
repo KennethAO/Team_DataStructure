@@ -1,0 +1,17 @@
+[
+{
+  "directory": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Notaciones/Notaciones/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Notaciones.dir\\main.cpp.obj -c C:\\Users\\Equipo\\Desktop\\EXTRA_GRUPO\\Notaciones\\Notaciones\\main.cpp",
+  "file": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Notaciones/Notaciones/main.cpp"
+},
+{
+  "directory": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Notaciones/Notaciones/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Notaciones.dir\\Menu.cpp.obj -c C:\\Users\\Equipo\\Desktop\\EXTRA_GRUPO\\Notaciones\\Notaciones\\Menu.cpp",
+  "file": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Notaciones/Notaciones/Menu.cpp"
+},
+{
+  "directory": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Notaciones/Notaciones/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Notaciones.dir\\Notaciones.cpp.obj -c C:\\Users\\Equipo\\Desktop\\EXTRA_GRUPO\\Notaciones\\Notaciones\\Notaciones.cpp",
+  "file": "C:/Users/Equipo/Desktop/EXTRA_GRUPO/Notaciones/Notaciones/Notaciones.cpp"
+}
+]

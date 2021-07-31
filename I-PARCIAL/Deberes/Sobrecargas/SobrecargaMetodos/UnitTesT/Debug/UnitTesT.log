@@ -1,0 +1,103 @@
+﻿  UnitTesT.cpp
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(456,21): warning C4244: '=': conversión de 'T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(445): message : al compilar la función del miembro clase plantilla "T Operaciones<T>::calcularMayor(T,T,T,T,T,T)"
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTesT.cpp(161): message : Vea la referencia a la creación de una instancia de la función plantilla "T Operaciones<T>::calcularMayor(T,T,T,T,T,T)" que se está compilando
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTesT.cpp(16): message : Vea la referencia a la creación de una instancia de clase plantilla "Operaciones<float>" que se está compilando
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(460,22): warning C4244: '=': conversión de 'T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(464,9): warning C4244: 'return': conversión de 'int' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(420,21): warning C4244: '=': conversión de 'T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(410): message : al compilar la función del miembro clase plantilla "T Operaciones<T>::calcularMayor(T,T,T,T,T)"
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTesT.cpp(155): message : Vea la referencia a la creación de una instancia de la función plantilla "T Operaciones<T>::calcularMayor(T,T,T,T,T)" que se está compilando
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(424,22): warning C4244: '=': conversión de 'T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(428,9): warning C4244: 'return': conversión de 'int' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(387,21): warning C4244: '=': conversión de 'T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(378): message : al compilar la función del miembro clase plantilla "T Operaciones<T>::calcularMayor(T,T,T,T)"
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTesT.cpp(149): message : Vea la referencia a la creación de una instancia de la función plantilla "T Operaciones<T>::calcularMayor(T,T,T,T)" que se está compilando
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(391,22): warning C4244: '=': conversión de 'T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(395,9): warning C4244: 'return': conversión de 'int' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(355,21): warning C4244: '=': conversión de 'T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(347): message : al compilar la función del miembro clase plantilla "T Operaciones<T>::calcularMayor(T,T,T)"
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTesT.cpp(143): message : Vea la referencia a la creación de una instancia de la función plantilla "T Operaciones<T>::calcularMayor(T,T,T)" que se está compilando
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(359,22): warning C4244: '=': conversión de 'T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\UnitTesT\UnitTest1.h(363,9): warning C4244: 'return': conversión de 'int' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+  UnitTesT.vcxproj -> C:\Users\Rafa\Desktop\ESPE -NEW\Metodos\Debug\UnitTesT.dll
