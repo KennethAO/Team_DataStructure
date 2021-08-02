@@ -1,0 +1,13 @@
+digraph G {
+x0x1041998[label="8"];
+x0x1041998->x0x10419c8[arrowhead = normaltee];
+x0x1041998->x0x10419b0[arrowhead = normaltee];
+x0x10419c8[label="6"];
+x0x10419c8->x0x10419e0[arrowhead = normaltee];
+x0x10419c8->x0x1041558[arrowhead = normaltee];
+x0x10419e0[label="4"];
+x0x1041558[label="8"];
+x0x10419b0[label="9"];
+x0x10419b0->x0x1041570[arrowhead = normaltee];
+x0x1041570[label="9"];
+}

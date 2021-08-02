@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/Equipo/Desktop/Arboles_Completo/Arboles Valen/Arboles Valen/ArbolAVL/ArbolBinario/AVL/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\AVL.dir\\main.cpp.obj -c \"C:\\Users\\Equipo\\Desktop\\Arboles_Completo\\Arboles Valen\\Arboles Valen\\ArbolAVL\\ArbolBinario\\AVL\\main.cpp\"",
+  "file": "C:/Users/Equipo/Desktop/Arboles_Completo/Arboles Valen/Arboles Valen/ArbolAVL/ArbolBinario/AVL/main.cpp"
+},
+{
+  "directory": "C:/Users/Equipo/Desktop/Arboles_Completo/Arboles Valen/Arboles Valen/ArbolAVL/ArbolBinario/AVL/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\AVL.dir\\Menu.cpp.obj -c \"C:\\Users\\Equipo\\Desktop\\Arboles_Completo\\Arboles Valen\\Arboles Valen\\ArbolAVL\\ArbolBinario\\AVL\\Menu.cpp\"",
+  "file": "C:/Users/Equipo/Desktop/Arboles_Completo/Arboles Valen/Arboles Valen/ArbolAVL/ArbolBinario/AVL/Menu.cpp"
+}
+]

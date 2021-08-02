@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "windows-gcc-x86",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+            "cStandard": "${default}",
+            "cppStandard": "${default}",
+            "intelliSenseMode": "windows-gcc-x86",
+            "compilerArgs": [
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic"
+            ],
+            "compileCommands": "C:/USERS/EQUIPO/DESKTOP/ARBOLES_COMPLETO/ARBOLES VALEN/ARBOLES VALEN/ARBOLAVL/ARBOLBINARIO/AVL/BUILD/COMPILE_COMMANDS.JSON"
+        }
+    ],
+    "version": 4
+}

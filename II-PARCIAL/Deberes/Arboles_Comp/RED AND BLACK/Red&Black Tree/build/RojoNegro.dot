@@ -1,0 +1,9 @@
+digraph G {
+x0xf619f8[label="8",style=filled,fillcolor=gray];
+x0xf619f8->x0xf619b8[arrowhead = normaltee];
+x0xf619f8->x0xf619d8[arrowhead = normaltee];
+x0xf619b8[label="4",style=filled,fillcolor=gray];
+x0xf619b8->x0xf61a18[arrowhead = normaltee];
+x0xf61a18[label="5",style=filled,fillcolor=lightcoral];
+x0xf619d8[label="9",style=filled,fillcolor=gray];
+}

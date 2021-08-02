@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\RedBlack.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\RedBlack.dir/objects.a @CMakeFiles\RedBlack.dir\objects1.rsp
+C:\MinGW\bin\mingw32-g++.exe -g -Wl,--whole-archive CMakeFiles\RedBlack.dir/objects.a -Wl,--no-whole-archive -o RedBlack.exe -Wl,--out-implib,libRedBlack.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\RedBlack.dir\linklibs.rsp

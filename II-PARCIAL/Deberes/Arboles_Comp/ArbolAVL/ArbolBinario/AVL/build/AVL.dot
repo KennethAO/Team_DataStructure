@@ -1,0 +1,7 @@
+digraph G {
+x0xec15e0[label="9"];
+x0xec15e0->x0xec1a20[arrowhead = normaltee];
+x0xec1a20[label="5"];
+x0xec1a20->x0xec1698[arrowhead = normaltee];
+x0xec1698[label="4"];
+}
